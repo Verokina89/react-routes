@@ -3,11 +3,14 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Footer from './components/Footer'
+import reactLogo from '../src/react.svg'
+import viteLogo from '../src/vite.svg'
 
 const App = () => {
+    
     return (
-        <>
-                <nav className="headerNav">
+        <> 
+            <nav className="headerNav">
                     <Link to='/'>⌂ Home</Link> |
                     <Link to='/projects'> Projects</Link> |
                     <Link to='/resume'> Resume Cv</Link> |
@@ -24,9 +27,3 @@ const App = () => {
 }
 
 export default App
-
-
-
-
-
-
