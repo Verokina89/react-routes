@@ -46,6 +46,12 @@ Importaremos estos archivos en los componentes `Projects` y `Resume` para mostra
 
 ## Referencias
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Tutorial React Router](https://reactrouter.com/en/6.22.1/start/tutorial)
+=======
+>>>>>>> 13f89bb (resolviendo err con la terminal referente a git pull origin main --rebase    after git push origin main)
 - [Tutorial React Router](https://reactrouter.com/en/6.22.1/start/tutorial)
 
 
@@ -111,3 +117,7 @@ Si es una SPA, se pierde el estado global de la aplicación.
 🔹 Intenta navegar con Link y observa que no hay recarga. 🔄
 🔹 Abre la consola del navegador (F12 > Network) y observa cómo funcionan. 📊
 
+<<<<<<< HEAD
+=======
+>>>>>>> 121c09e (se añaden anotaciones y comentarios curiosos por archivo)
+>>>>>>> 13f89bb (resolviendo err con la terminal referente a git pull origin main --rebase    after git push origin main)
