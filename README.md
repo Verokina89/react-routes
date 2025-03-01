@@ -116,8 +116,3 @@ Si es una SPA, se pierde el estado global de la aplicación.
 🔹 Crea una navbar con Link y href y prueba la diferencia. 🧐
 🔹 Intenta navegar con Link y observa que no hay recarga. 🔄
 🔹 Abre la consola del navegador (F12 > Network) y observa cómo funcionan. 📊
-
-<<<<<<< HEAD
-=======
->>>>>>> 121c09e (se añaden anotaciones y comentarios curiosos por archivo)
->>>>>>> 13f89bb (resolviendo err con la terminal referente a git pull origin main --rebase    after git push origin main)

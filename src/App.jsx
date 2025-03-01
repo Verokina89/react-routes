@@ -3,23 +3,26 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Footer from './components/Footer'
-import reactLogo from '../src/react.svg'
-import viteLogo from '../src/vite.svg'
+import './App.css'
+// import reactLogo from '../src/react.svg'
+// import viteLogo from '../src/vite.svg'
 
 const App = () => {
     
     return (
         <> 
             <nav className="headerNav">
-                    <Link to='/'>⌂ Home</Link> |
-                    <Link to='/projects'> Projects</Link> |
-                    <Link to='/resume'> Resume Cv</Link> |
-                </nav>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/resume' element={<Resume />} />
-            </Routes>
+                <Link to='/'>⌂ Home</Link> |
+                <Link to='/projects'> Projects</Link> |
+                <Link to='/resume'> Resume Cv</Link> |
+            </nav>
+            
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/projects' element={<Projects />} />
+                    <Route path='/resume' element={<Resume />} />
+                </Routes>
+           
             
             <Footer />
         </>
@@ -29,7 +32,7 @@ const App = () => {
 export default App
 
 
-/*notas: el fragment agrupa una lista de hijos sin agregar nodos extra al DOM. Simplemente envuelve y mantiene un clean code. Si se utiliza un section, no es necesario un fragment. Tecnicamente; "un fragment se refiere a una característica de React que te permite agrupar un conjunto de elementos hijos sin agregar un nodo adicional al DOM (Documento Object Model) resultante."
+/*notas: el fragment agrupa una lista de hijos sin agregar nodos extra al DOM. Simplemente envuelve y mantiene un clean code. Si se utiliza un section, no es necesario un fragment. Tecnicamente; un fragment se refiere a una característica de React que te permite agrupar un conjunto de elementos hijos sin agregar un nodo adicional al DOM (Documento Object Model) resultante. el fagment es solamente para embolver y nos permite mantener un codigo limpio
 */
 
 /**
