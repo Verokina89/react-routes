@@ -2,12 +2,18 @@
 const Footer = () => {
     return (
         <footer className='footerInfo'>
-            <h3>Informacion Personal</h3>
-            <p>Email: veroDev@gmail.com</p>
-            <p>gitHub: https://github.com/Verokina89</p>
-            <p>Dirección: Avenida de la practica para una Dev(Santander)</p>
-            <p>Teléfono: 65555455.</p>
-            <p>Todos los derechos reservados.</p>
+            <h2>Información de Contacto</h2>
+            <p>📧 veropsuarez@icloud.com</p>
+            <h3>Webs: </h3>
+            🐱 <a href="https://github.com/Verokina89" target="_blank" rel="noopener noreferrer">
+                https://github.com/Verokina89
+            </a>
+            <a href="https://www.linkedin.com/in/veronica-isabel-perez-suarez/.com/" target="_blank" rel="noopener noreferrer">
+            https://www.linkedin.com/in/veronica-isabel-perez-suarez/.com
+            </a>
+            <p>📍Cantabria</p>
+            <p>📱65555455.</p>
+            <h4>Todos los derechos reservados.</h4>
         </footer>
 
     )

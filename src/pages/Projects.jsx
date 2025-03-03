@@ -3,14 +3,15 @@ import { useState, useEffect } from "react";
 import projectsData from '../data/projects';
 
 function Projects () {
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState([])   //manejamos destro del array los cambio de estados de projects.js
 
-  useEffect(() => {
+  useEffect(() => {                              //hacemos uso del useEffect para derrollar la ejecucion 
     setProjects(projectsData)
   }, [])
 
   return (
     <>
+    <link to="/">Home</link>
       <div className='bodyProjcts'>
         <h1>Proyectos Realizados</h1>
         <ul>
@@ -19,7 +20,9 @@ function Projects () {
               <h2>{project.name}</h2>
               <p>{project.description}</p>
               <img src={project.image} alt={`${project.name}image`} />
-              <a href={project.url} target="_blank" rel="noopener noreferrer">Ver imagen del Proyecto</a>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                Ver imagen del Proyecto
+              </a>
             </li>
           ))}
         </ul>
@@ -58,4 +61,6 @@ export default Projects;
 
 Nota: en projectos pequenos se utilizara const en lugar de function.
 -En la linea 15 se añade target="_blank" rel="noopener noreferrer" para abrir en una nueva pagina y que esta no sea rastreable por parte del seo a modo que se privada. 
+
+
  */

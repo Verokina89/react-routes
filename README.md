@@ -56,7 +56,7 @@ Importaremos estos archivos en los componentes `Projects` y `Resume` para mostra
 
 
 
-📌 Resumen general
+## Resumen 📌 
 
 🔹 Busca en el index.html el elemento con id="root".
 🔹 Crea la raíz con createRoot() para optimizar el rendimiento.
@@ -116,3 +116,16 @@ Si es una SPA, se pierde el estado global de la aplicación.
 🔹 Crea una navbar con Link y href y prueba la diferencia. 🧐
 🔹 Intenta navegar con Link y observa que no hay recarga. 🔄
 🔹 Abre la consola del navegador (F12 > Network) y observa cómo funcionan. 📊
+
+## Explicación algunas propiedades, atributos en el enlace a los proyectos; en Projects.jsx:
+
+<a href={project.url} target="_blank" rel="noopener noreferrer">
+  Ver imagen del Proyecto
+</a>
+target="_blank" → Abre el enlace en una nueva pestaña/ventana.
+rel="noopener noreferrer":
+noopener → Evita que la nueva pestaña tenga acceso a window.opener, lo que previene ataques de seguridad.
+noreferrer → Evita que el sitio destino vea la URL de referencia (el sitio desde donde se hizo clic).
+Con estas propiedades, garantizas que el enlace se abra en una nueva ventana de forma segura y sin exponer la fuente de navegación. 🚀
+
+## 

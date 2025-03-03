@@ -54,22 +54,116 @@ table {
 }
 
 body{
+	/* Asegura que ocupe toda la pantalla */
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 
-	background-color: rgb(19, 5, 80);
-	color: aliceblue;
+    /* Imagen de fondo */
+    background-image: url(./img/portafolio-programador.webp);
+    background-repeat: no-repeat;
+    background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+
+    /* Color de texto */
+    color: aliceblue;
 }
 
+/* Asegurar que el contenedor principal también ocupe toda la pantalla
+html {
+    height: 100%;
+} */
+ 
+/* Asegurar que toda la página use flexbox para distribuir el contenido */
+html, body {
+    height: 100%; /* Ocupa toda la pantalla */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerNav{
+	font-size: 1.4em;
+	
+}
+
+.bodyHome {
+	padding: 20px;
+	color: rgb(63, 214, 234);
+} 
+
 h1{
-	font-size: 3.2em;
-	line-height: 1.1;
+	font-size: 3.5em;
+    font-weight: 900;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
+    color: #3fd6ea; /* Azul claro */
+    letter-spacing: 2px;
 }
 
 h2{
-	font-size: 2em;
+	font-size: 2.2em;
 	line-height: 1.1;
 }
 
+h3{
+	font-size: 1.4em;
+}
+
 p{
-	font-size: 1.1em;
-	line-height: 1.1;
+	font-size: 1.4em;
+    max-width: 600px; /* Limita el ancho para que sea mas legible */
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+a{
+	color:rgb(23, 213, 124) ;
+	text-decoration: none;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff00ff; /* Un rosa más brillante */
+    text-decoration: underline;
+}
+
+/* 
+.bodyProjcts {
+	
+} */
+
+/* .bodyResume{
+
+} */
+ 
+.footerInfo {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center;  /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
+    text-align: center;
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 0.3); Fondo con transparencia */
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footerInfo h3{
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+.footerInfo a{
+	color: aliceblue;  /* Color inicial */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Transición suave */
+}
+/* Cambio al pasar el cursor */
+.footerInfo a:hover {
+	font-size: 1.6em;
+    color: rgb(255, 0, 247); /* Nuevo color al hacer hover */
+    text-decoration: underline;
 }
