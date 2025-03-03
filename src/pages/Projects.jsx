@@ -12,7 +12,6 @@ function Projects () {
 
   return (
     <>
-    <Link to="/">Home</Link>
       <div className='bodyProjcts'>
         <h1>Proyectos Realizados</h1>
         <ul>
@@ -28,6 +27,8 @@ function Projects () {
           ))}
         </ul>
       </div>
+      <br />
+      <Link to="/">Ir a Home</Link>
     </>
   );
 }

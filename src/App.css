@@ -54,6 +54,7 @@ table {
 }
 
 body{
+
 	/* Asegura que ocupe toda la pantalla */
     min-height: 100vh;
     width: 100%;
@@ -62,7 +63,7 @@ body{
     overflow-x: hidden;
 
     /* Imagen de fondo */
-    background-image: url(./img/portafolio-programador.webp);
+    background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg);
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
@@ -88,11 +89,11 @@ html, body {
 
 .headerNav{
 	font-size: 1.4em;
-	
+	margin: 20px;
 }
 
 .bodyHome {
-	padding: 20px;
+	padding: 60px;
 	color: rgb(63, 214, 234);
 } 
 
@@ -101,7 +102,8 @@ h1{
     font-weight: 900;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
     color: #3fd6ea; /* Azul claro */
-    letter-spacing: 2px;
+    letter-spacing: 3px; /*espacio entre caracteres*/
+    padding: 10px;
 }
 
 h2{
@@ -121,6 +123,7 @@ p{
 }
 
 a{
+    font-size: 1.4em;
 	color:rgb(23, 213, 124) ;
 	text-decoration: none;
 	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
@@ -132,16 +135,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 
+
 .bodyProjcts {
-	
-} */
+	display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center;  /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
 
-/* .bodyResume{
-
-} */
- 
-.footerInfo {
+.bodyResume{
     display: flex;
     flex-direction: column; /* Elementos en columna */
     align-items: center;  /* Centra los elementos horizontalmente */
@@ -152,13 +157,27 @@ a:hover {
     border-radius: 10px;
     width: 100%;
 }
+ 
+.footerInfo {
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    align-items: center;  /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
 
 .footerInfo h3{
-	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+	text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
+
+.footerInfo h2{
+	text-shadow: 6px 6px 12px rgb(0, 0, 0);
+}
+
 .footerInfo a{
 	color: aliceblue;  /* Color inicial */
-    text-decoration: none;
     transition: color 0.3s ease-in-out; /* Transición suave */
 }
 /* Cambio al pasar el cursor */
