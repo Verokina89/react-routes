@@ -12,7 +12,7 @@ function Projects () {
 
   return (
     <>
-    <link to="/">Home</link>
+    <Link to="/">Home</Link>
       <div className='bodyProjcts'>
         <h1>Proyectos Realizados</h1>
         <ul>
@@ -22,7 +22,7 @@ function Projects () {
               <p>{project.description}</p>
               <img src={project.image} alt={`${project.name}image`} />
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                Ver imagen del Proyecto
+              Visit Website
               </a>
             </li>
           ))}

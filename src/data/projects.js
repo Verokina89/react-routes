@@ -1,27 +1,28 @@
+
 const projects = [
   {
     id: 1,
-    name: 'Project 1',
+    name: 'Vips Dasboard.',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png',
-    description: 'This is a description of project 1',
-    url: 'https://www.google.com',
+      'src/img/dasboardProject.png',
+    description: 'Creacion de un web basada en un Dashboard que contiene herramientas de ayudas para el escritorio personal.',
+    url: 'https://verokina89.github.io/project-break-dashboard/index.html',
   },
   {
     id: 2,
-    name: 'Project 2',
+    name: 'BBDD ProjectBreakeBackend',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png',
-    description: 'This is a description of project 2',
-    url: 'https://www.google.com',
+      '/src/img/projectbreak-back-react.onrender.com.png',
+    description: 'Creación de una base de datos desde cero con MongoDB, deploy with Render.',
+    url: 'https://projectbreak-back-react.onrender.com/api/products',
   },
   {
     id: 3,
-    name: 'Project 3',
+    name: 'Project',
     image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png',
+      '/src/img/shopbykianelaProjectReact.png',
     description: 'This is a description of project 3',
-    url: 'https://www.google.com',
+    url: 'https://luxury-gecko-33bf63.netlify.app/category',
   },
 ];
 
