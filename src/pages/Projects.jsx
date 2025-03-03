@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import projectsData from '../data/projects';
+import { Link } from 'react-router-dom';
 
 function Projects () {
   const [projects, setProjects] = useState([])   //manejamos destro del array los cambio de estados de projects.js
