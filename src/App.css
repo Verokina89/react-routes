@@ -193,12 +193,41 @@ a:hover {
     width: 100%;
 }
 .bodyResume img{
-    width: 180px; /* Ajusta el tamaño de las imágenes */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 10px; /* Opcional: esquinas redondeadas */
+    width: 160px; /* Ajusta el tamaño de las imágenes */
+    /* height: auto; Mantiene la proporción */
+    height: 180px; 
+    border-radius: 50%; /* Opcional: esquinas redondeadas */
+    object-fit: cover; /* Evita distorsión */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    margin: 15px 0; /* Espacio arriba y abajo */
+    /* margin: 15px 0; Espacio arriba y abajo */
+
+    /* Posicionamiento */
+    display: block; /* Asegura que respete margen automático */
+    margin-left: auto; /* Empuja la imagen a la derecha */
+    
+    /* Borde inicial*/
+    border: 4px solid #2bf0e0;
+    /* Transición
+    transition: border-color 0.2s ease-in-out; */
+
+    /* Animación */
+    animation: cambiarBorde 1.5s infinite alternate ease-in-out;
 }
+/* Efecto hover para cambiar el color del borde
+.bodyResume img:hover {
+    border-color: #3ce78f; 
+} */
+
+/* Definir animación */
+@keyframes cambiarBorde {
+    0% {
+        border-color: #1cced7; 
+    }
+    100% {
+        border-color: #b7ea2a; 
+    }
+}
+
 
 .footerInfo {
     display: flex;
