@@ -4,18 +4,20 @@ import projectsData from '../data/projects';
 import { Link } from 'react-router-dom';
 
 function Projects () {
-  const [projects, setProjects] = useState([])   //manejamos destro del array los cambio de estados de projects.js
+  ///cuando trabajemos con bbdd de afuera se utilizaria el siguiente bloque de codigo
+  // const [projects, setProjects] = useState([])   //manejamos destro del array los cambio de estados de projects.js
 
-  useEffect(() => {                              //hacemos uso del useEffect para derrollar la ejecucion 
-    setProjects(projectsData)
-  }, [])
+  // useEffect(() => {                              //hacemos uso del useEffect para derrollar la ejecucion 
+  //   setProjects(projectsData)
+  // }, [])
 
+  ///En el caso de este proyecto no es necesario trabajar ocn los efectos o cambios de estado porque la data esta dentro de nuestro proyecto. 
   return (
     <>
       <div className='bodyProjcts'>
         <h1>Proyectos Realizados</h1>
         <ul>
-          {projects.map((project) => (
+          {projectsData.map((project) => (
             <li key={project.id}>
               <h2>{project.name}</h2>
               <p>{project.description}</p>
@@ -38,14 +40,14 @@ export default Projects;
 
 /*
 import React from 'react';
-import projects from '../data/projects';
+import projectsData from '../data/projects';
 
 const Projects = () => {
   return (
     <div className='bodyProycts'>
       <h1>Proyectos Realizados</h1>
       <ul>
-        {projects.map((project) => (
+        {projectsData.map((project) => (
           <li key={project.id}>
             <h2>{project.name}</h2>
             <p>{project.description}</p>
