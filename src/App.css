@@ -54,7 +54,6 @@ table {
 }
 
 body{
-
 	/* Asegura que ocupe toda la pantalla */
     min-height: 100vh;
     width: 100%;
@@ -63,22 +62,15 @@ body{
     overflow-x: hidden;
 
     /* Imagen de fondo */
-    background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg);
+    background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg); 
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
     background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
-
-    /* Color de texto */
     color: aliceblue;
 }
-
-/* Asegurar que el contenedor principal también ocupe toda la pantalla
-html {
-    height: 100%;
-} */
  
-/* Asegurar que toda la página use flexbox para distribuir el contenido */
+/* Asegura el uso de flexbox para distribuir el contenido */
 html, body {
     height: 100%; /* Ocupa toda la pantalla */
     margin: 0;
@@ -90,6 +82,12 @@ html, body {
 .headerNav{
 	font-size: 1.4em;
 	margin: 20px;
+}
+/* 🔹 Cambio de color en el Nav cuando estás en la página actual */
+.headerNav a.active {
+    color: rgb(255, 0, 247); /* Cambia el color del enlace activo */
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .bodyHome {
@@ -105,22 +103,28 @@ h1{
     color: #3fd6ea; /* Azul claro */
     letter-spacing: 3px; /*espacio entre caracteres*/
     padding: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 h2{
-	font-size: 2.2em;
+    font-size: 2.2em;
 	line-height: 1.1;
+    margin: 20px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 h3{
 	font-size: 1.4em;
+    margin: 20px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 p{
 	font-size: 1.4em;
     max-width: 600px; /* Limita el ancho para que sea mas legible */
     line-height: 1.6;
-    margin-top: 10px;
+    margin: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 a{
@@ -139,25 +143,63 @@ a:hover {
 .bodyProjcts {
 	display: flex;
     flex-direction: column; /* Elementos en columna */
-    align-items: center;  /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
+    align-items: center;  /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente  */
     text-align: center;
-    padding: 20px;
+    margin: 20px 0 200px 0;
+	padding: 50px;
     width: 100%;
 }
+.bodyProjcts ul{
+    width: 100%;
+    max-width: 800px; /* Define un ancho máximo para no expandir demasiado */
+}
+.bodyProjcts li {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro del <li> */
+    text-align: center;
+    margin-bottom: 40px; /* Espacio entre proyectos */
+}
+.bodyProjcts img {
+    width: 800px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Opcional: esquinas redondeadas */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    margin: 15px 0; /* Espacio arriba y abajo */
+}
+.bodyProjcts a {
+    display: block; /* Hace que ocupe toda la línea */
+    margin-top: 10px; /* Espacio con la imagen */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3fd6ea;
+    transition: color 0.3s ease-in-out;
+}
+.bodyProjcts a:hover {
+    color: #ff00ff; /* Color al pasar el cursor */
+    text-decoration: underline;
+}
 
-.bodyResume{
+.bodyResume {
     display: flex;
     flex-direction: column; /* Elementos en columna */
     align-items: center;  /* Centra los elementos horizontalmente */
     justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
     text-align: center;
+    margin: 20px 0 200px 0;
     padding: 20px;
-    /* background-color: rgba(0, 0, 0, 0.3); Fondo con transparencia */
     border-radius: 10px;
     width: 100%;
 }
- 
+.bodyResume img{
+    width: 180px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Opcional: esquinas redondeadas */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    margin: 15px 0; /* Espacio arriba y abajo */
+}
+
 .footerInfo {
     display: flex;
     flex-direction: column; /* Elementos en columna */
@@ -168,13 +210,6 @@ a:hover {
     width: 100%;
 }
 
-.footerInfo h3{
-	text-shadow: 4px 4px 10px rgba(0, 0, 0);
-}
-
-.footerInfo h2{
-	text-shadow: 6px 6px 12px rgb(0, 0, 0);
-}
 
 .footerInfo a{
 	color: aliceblue;  /* Color inicial */
