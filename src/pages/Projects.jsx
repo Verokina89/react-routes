@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import projectsData from '../data/projects';
 import { Link } from 'react-router-dom';
 
@@ -15,13 +15,14 @@ function Projects () {
   return (
     <>
       <div className='bodyProjcts'>
-        <h1>Proyectos Realizados</h1>
+        <h1>Mis Proyectos</h1>
         <ul>
           {projectsData.map((project) => (
             <li key={project.id}>
               <h2>{project.name}</h2>
               <p>{project.description}</p>
               <img src={project.image} alt={`${project.name}image`} />
+              
               <a href={project.url} target="_blank" rel="noopener noreferrer">
               Visit Website
               </a>

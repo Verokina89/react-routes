@@ -62,7 +62,7 @@ body{
     overflow-x: hidden;
 
     /* Imagen de fondo */
-    background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg); 
+    background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg);
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
@@ -91,18 +91,27 @@ html, body {
 }
 
 .bodyHome {
-    margin: 20px 0 200px 0;
+    /* margin: 20px 0 200px 0;
 	padding: 50px;
-	color: rgb(63, 214, 234);
+	color: rgb(63, 214, 234); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    padding: 20px;
+
+    
 } 
 
 h1{
 	font-size: 3.5em;
     font-weight: 900;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
-    color: #3fd6ea; /* Azul claro */
+    color: #38dff5; /* Azul claro */
     letter-spacing: 3px; /*espacio entre caracteres*/
-    padding: 10px;
+    margin: 20px;
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
@@ -116,27 +125,29 @@ h2{
 h3{
 	font-size: 1.4em;
     margin: 20px;
+    margin-top: 10px;
+    line-height: 1.6;
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 p{
 	font-size: 1.4em;
     max-width: 600px; /* Limita el ancho para que sea mas legible */
-    line-height: 1.6;
+    line-height: 1.2;
     margin: 10px;
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 a{
-    font-size: 1.4em;
-	color:rgb(23, 213, 124) ;
+    font-size: 1.2em;
+	color:rgba(207, 247, 244, 0.577) ;
 	text-decoration: none;
 	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ff00ff; /* Un rosa más brillante */
+    color: #46f4ba; /* Un rosa más brillante */
     text-decoration: underline;
 }
 
@@ -177,7 +188,7 @@ a:hover {
     transition: color 0.3s ease-in-out;
 }
 .bodyProjcts a:hover {
-    color: #ff00ff; /* Color al pasar el cursor */
+    color: #3c36f4; /* Color al pasar el cursor */
     text-decoration: underline;
 }
 

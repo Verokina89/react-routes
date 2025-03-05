@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <>
             <div className='bodyHome'>
-                <h1>¡Bienvenidos!</h1>
-                <p>Os presento mi primer Portafolio como Desarroladora Web con React</p>
+                <h1>¡Hola! 👋🏼, Soy Veronica Isabel</h1>
+                <h2>Full Stack Developer & Corporate Journalist </h2>
                 {/* <nav className='navHome'>
                     <ul>
                         <li><Link to='/proyects'>Proyects</Link></li>
