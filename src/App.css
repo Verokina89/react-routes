@@ -63,7 +63,7 @@ body{
 
     /* Imagen de fondo */
     /* background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg); */
-    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('./img/captureLogoDev.png');
+    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('./img/CapturaDress.png');
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
@@ -92,20 +92,18 @@ html, body {
 }
 
 .bodyHome {
-    /* margin: 20px 0 200px 0;
-	padding: 50px;
-	color: rgb(63, 214, 234); */
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh; /* Ocupa toda la pantalla */
-    
+   
 } 
 .bodyHome img{
-    width: 180px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     object-fit: cover; /* Evita distorsión */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
@@ -113,19 +111,20 @@ html, body {
 
     /* Posicionamiento */
     display: block; /* Asegura que respete margen automático */
+   
     /* margin-left: auto; Empuja la imagen a la derecha */
     
     /* Borde inicial*/
-    border: 4px solid #2bf0e0;
+    border: 8px solid #2bf0e0;
     /* Transición
     transition: border-color 0.2s ease-in-out; */
 
     /* Animación */
-    animation: cambiarBorde 1.5s infinite alternate ease-in-out;
+    animation: cambiarBorde 1.2s infinite alternate ease-in-out;
 }
-.bodyResume img:hover {
-    border-color: #3ce78f; 
-}
+/* .bodyHome img:hover {
+    border-color: #59f866; 
+} */
 
 
 h1{
@@ -134,7 +133,7 @@ h1{
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
     color: #38dff5; /* Azul claro */
     letter-spacing: 3px; /*espacio entre caracteres*/
-    margin: 20px;
+    margin-top: 80px;
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
@@ -264,6 +263,7 @@ a:hover {
 
 
 .footerInfo {
+    margin-top: 50px;
     display: flex;
     flex-direction: column; /* Elementos en columna */
     align-items: center;  /* Centra los elementos horizontalmente */
@@ -281,6 +281,6 @@ a:hover {
 /* Cambio al pasar el cursor */
 .footerInfo a:hover {
 	font-size: 1.6em;
-    color: rgb(255, 0, 247); /* Nuevo color al hacer hover */
+    color: #b7ea2a; /* Nuevo color al hacer hover */
     text-decoration: underline;
 }

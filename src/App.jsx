@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Footer from './components/Footer'
-import HeaderNav from './pages/HeaderNav';
+import HeaderNav from './components/HeaderNav';
 
 import './App.css'
 // import reactLogo from '../src/react.svg'
@@ -23,8 +23,10 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/resume' element={<Resume />} />
+                <Route path='/footer' element={<Footer />} />
             </Routes>
-            <Footer />
+
+            
         </>
     );
 }
