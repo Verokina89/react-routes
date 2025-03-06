@@ -10,10 +10,10 @@ const projects = [
   },
   {
     id: 2,
-    name: 'BBDD ProjectBreakBackend',
+    name: 'BBDD Project Break Backend',
     image:
       '/src/img/projectbreak-back-react.onrender.com.png',
-    description: 'Creación de una base de datos desde cero con MongoDB, deploy with Render.',
+    description: 'Creación de una base de datos desde cero con MongoDB, deploy con Render.',
     url: 'https://projectbreak-back-react.onrender.com/api/products',
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     name: 'Shop Kianela ProjectReact',
     image:
       '/src/img/shopbykianelaProjectReact.png',
-    description: 'Proyecto final que combina todos los lenguajes y tecnologias aprendido en el bootcamp. Partiendo del uso de projects anteriores; como la api creada y renderizadar desde cero, manejada con mongoDB (en el backend)',
+    description: 'Proyecto final que combina todos los lenguajes y tecnologias aprendidos en el bootcamp. Partiendo del uso de projectos anteriores; como la api de productos, creada y renderizada que se reutiliza en esta app (manejada con mongoDB). Se combinan proyectos reutilizables pero con las modificacioens pertinentes para el lenguaje (React)',
     url: 'https://luxury-gecko-33bf63.netlify.app',
   },
 

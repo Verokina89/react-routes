@@ -6,6 +6,7 @@ const Home = () => {
         <>
             <div className='bodyHome'>
                 <h1>¡Hola! 👋🏼, Soy Veronica Isabel</h1>
+                <img src="src/img/fotoCarnetFondoNegro.png" alt="fotoTipoCarnet" />
                 <h2>Full Stack Developer & Corporate Journalist </h2>
                 {/* <nav className='navHome'>
                     <ul>

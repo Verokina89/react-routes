@@ -20,8 +20,8 @@ function Projects () {
           {projectsData.map((project) => (
             <li key={project.id}>
               <h2>{project.name}</h2>
-              <p>{project.description}</p>
               <img src={project.image} alt={`${project.name}image`} />
+              <p>{project.description}</p>
               
               <a href={project.url} target="_blank" rel="noopener noreferrer">
               Visit Website

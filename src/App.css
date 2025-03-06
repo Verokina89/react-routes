@@ -49,7 +49,7 @@ table {
 #root {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -62,7 +62,8 @@ body{
     overflow-x: hidden;
 
     /* Imagen de fondo */
-    background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg);
+    /* background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg); */
+    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('./img/captureLogoDev.png');
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
@@ -81,11 +82,11 @@ html, body {
 
 .headerNav{
 	font-size: 1.4em;
-	margin: 20px;
+	margin-top: 20px;
 }
 /* 🔹 Cambio de color en el Nav cuando estás en la página actual */
 .headerNav a.active {
-    color: rgb(255, 0, 247); /* Cambia el color del enlace activo */
+    color: rgb(70, 235, 166); /* Cambia el color del enlace activo */
     font-weight: bold;
     text-decoration: underline;
 }
@@ -100,10 +101,32 @@ html, body {
     align-items: center;
     text-align: center;
     min-height: 100vh; /* Ocupa toda la pantalla */
-    padding: 20px;
-
     
 } 
+.bodyHome img{
+    width: 180px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover; /* Evita distorsión */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    /* margin: 15px 0; Espacio arriba y abajo */
+
+    /* Posicionamiento */
+    display: block; /* Asegura que respete margen automático */
+    /* margin-left: auto; Empuja la imagen a la derecha */
+    
+    /* Borde inicial*/
+    border: 4px solid #2bf0e0;
+    /* Transición
+    transition: border-color 0.2s ease-in-out; */
+
+    /* Animación */
+    animation: cambiarBorde 1.5s infinite alternate ease-in-out;
+}
+.bodyResume img:hover {
+    border-color: #3ce78f; 
+}
+
 
 h1{
 	font-size: 3.5em;
@@ -173,29 +196,30 @@ a:hover {
     margin-bottom: 40px; /* Espacio entre proyectos */
 }
 .bodyProjcts img {
-    width: 800px; /* Ajusta el tamaño de las imágenes */
+    width: 680px; /* Ajusta el tamaño de las imágenes */
     height: auto; /* Mantiene la proporción */
     border-radius: 10px; /* Opcional: esquinas redondeadas */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    margin: 15px 0; /* Espacio arriba y abajo */
+    /* Sombra para mayor profundidad */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(0, 0, 0, 0.4);
+    margin: 15px 0; /*espacio arriba y abajo */
 }
 .bodyProjcts a {
-    display: block; /* Hace que ocupe toda la línea */
+    display: block; /*ocupa toda la línea */
     margin-top: 10px; /* Espacio con la imagen */
     font-size: 1.5em;
     font-weight: bold;
-    color: #3fd6ea;
+    color: #189bb3dd;
     transition: color 0.3s ease-in-out;
 }
 .bodyProjcts a:hover {
-    color: #3c36f4; /* Color al pasar el cursor */
+    color: #49e0f4; /*al pasar el cursor */
     text-decoration: underline;
 }
 
 .bodyResume {
     display: flex;
-    flex-direction: column; /* Elementos en columna */
-    align-items: center;  /* Centra los elementos horizontalmente */
+    flex-direction: column; 
+    align-items: center;  /*centra horizontalmente */
     justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
     text-align: center;
     margin: 20px 0 200px 0;
@@ -203,27 +227,26 @@ a:hover {
     border-radius: 10px;
     width: 100%;
 }
-.bodyResume img{
-    width: 160px; /* Ajusta el tamaño de las imágenes */
-    /* height: auto; Mantiene la proporción */
-    height: 180px; 
-    border-radius: 50%; /* Opcional: esquinas redondeadas */
+/* .bodyResume img{
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
     object-fit: cover; /* Evita distorsión */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+   /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
     /* margin: 15px 0; Espacio arriba y abajo */
 
     /* Posicionamiento */
-    display: block; /* Asegura que respete margen automático */
-    margin-left: auto; /* Empuja la imagen a la derecha */
+   /* display: block; /* Asegura que respete margen automático */
+    /* margin-left: auto; Empuja la imagen a la derecha */
     
     /* Borde inicial*/
-    border: 4px solid #2bf0e0;
+   /* border: 4px solid #2bf0e0;  */
     /* Transición
     transition: border-color 0.2s ease-in-out; */
 
     /* Animación */
-    animation: cambiarBorde 1.5s infinite alternate ease-in-out;
-}
+   /* animation: cambiarBorde 1.5s infinite alternate ease-in-out; */
+/*}*/
 /* Efecto hover para cambiar el color del borde
 .bodyResume img:hover {
     border-color: #3ce78f; 

@@ -5,7 +5,7 @@ function Resume() {
     <div className='bodyResume'>
         <div className='jobs'>
             <h1>Verónica I Pérez S</h1>
-            <img src="/src/img/foto1.jpeg" alt="fotoTipoCarnet" />
+            {/* <img src="/src/img/foto1-removebg-preview.jpg" alt="fotoTipoCarnet" /> */}
             <h2>Experiencia Laboral</h2>
             <ul>
                 {experiences.map((experience) => (
