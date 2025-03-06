@@ -2,7 +2,7 @@ import { Routes, Route, Link, Router } from 'react-router-dom';
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
-import Footer from './components/Footer'
+import Footer from './pages/Footer'
 import HeaderNav from './components/HeaderNav';
 
 import './App.css'
@@ -26,7 +26,6 @@ const App = () => {
                 <Route path='/footer' element={<Footer />} />
             </Routes>
 
-            
         </>
     );
 }

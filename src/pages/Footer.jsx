@@ -1,4 +1,5 @@
-
+import React from "react";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className='footerInfo'>
@@ -23,6 +24,8 @@ const Footer = () => {
             <p>📍Cantabria</p>
             <p>📱65555455.</p>
             <h4>Todos los derechos reservados.</h4>
+            <br />
+            <Link to="/">Inicio</Link>
         </footer>
 
     )

@@ -29,9 +29,9 @@ function Projects () {
             </li>
           ))}
         </ul>
+        <br />
+        <Link to="/">Inicio</Link>
       </div>
-      <br />
-      <Link to="/">Ir a Home</Link>
     </>
   );
 }

@@ -1,11 +1,13 @@
 import { experiences, studies } from '../data/resume';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Resume() {
   return (
     <div className='bodyResume'>
         <div className='jobs'>
+            <img src="/src/img/logoDevprogrammer.png" alt="Logo" />
             <h1>Verónica I Pérez S</h1>
-            {/* <img src="/src/img/foto1-removebg-preview.jpg" alt="fotoTipoCarnet" /> */}
             <h2>Experiencia Laboral</h2>
             <ul>
                 {experiences.map((experience) => (
@@ -27,8 +29,11 @@ function Resume() {
                     </li>
                 ))}
             </ul>       
-        </div>    
+        </div>
+        <br />
+        <Link to="/">Inicio</Link>    
     </div>
+    
   );
 }
 
