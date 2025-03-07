@@ -5,21 +5,10 @@ import { Link } from 'react-router-dom';
 function Resume() {
   return (
     <div className='bodyResume'>
-        <div className='jobs'>
-            <img src="/src/img/logoDevprogrammer.png" alt="Logo" />
-            <h1>Verónica I Pérez S</h1>
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                {experiences.map((experience) => (
-                    <li key={experience.id}>
-                        <h3>{experience.title} - {experience.company}</h3>
-                        <p>{experience.date}</p>
-                    </li>
-                ))}
-            </ul>
-        </div>
-        <div className='study'>
-            <h2>Formacion Academica</h2>
+        <img src="/src/img/logoDevprogrammer.png" alt="Logo" />
+        <h1>Conocimientos & Experiencias</h1>
+        <div className='studyCard'>
+            <h2>Me he Formado Academicamente como:</h2>
             <ul>
                 {studies.map((study) => (
                     <li key={study.id}>
@@ -29,6 +18,17 @@ function Resume() {
                     </li>
                 ))}
             </ul>       
+        </div>
+        <div className='jobsCard'>
+            <h2>Laboralmente me he desempeñado como:</h2>
+            <ul>
+                {experiences.map((experience) => (
+                    <li key={experience.id}>
+                        <h3>{experience.title} - {experience.company}</h3>
+                        <p>{experience.date}</p>
+                    </li>
+                ))}
+            </ul>
         </div>
         <br />
         <Link to="/">Inicio</Link>    

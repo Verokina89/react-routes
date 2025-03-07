@@ -102,31 +102,22 @@ html, body {
    
 } 
 .bodyHome img, .bodyResume img{
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover; /* Evita distorsión */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    /* margin: 15px 0; Espacio arriba y abajo */
-
     /* Posicionamiento */
     display: block; /* Asegura que respete margen automático */
-   
-    /* margin-left: auto; Empuja la imagen a la derecha */
-    
-    /* Borde inicial*/
-    border: 8px solid #2bf0e0;
-
-    /* Transición
-    transition: border-color 0.2s ease-in-out; */
-
-    /* Animación */
+    width: 280px;
+    height: 280px;
+    border: 6px solid #2bf0e0;
+    border-radius: 50%;
+    box-shadow: 0px 2px 46px 7px rgb(238, 228, 37);
+    object-fit: cover; /* Evita distorsión */
+    -webkit-box-shadow: 0px 2px 46px 7px rgb(245, 244, 233);
+    -moz-box-shadow: 0px 2px 46px 7px rgb(243, 232, 30); /* Sombra para destacar */
+    transition: border-color 0.2s ease-in-out;
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
 }
-/* .bodyHome img:hover {
-    border-color: #59f866; 
-} */
-
+.bodyHome img:hover {
+    border-color: #e3f859; 
+}
 
 h1{
 	font-size: 3.5em;
@@ -218,19 +209,23 @@ a:hover {
 }
 
 .bodyResume {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;  /*centra horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
     text-align: center;
     margin: 20px 0 200px 0;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
+}
 
+.bodyResume h1{
+    font-size: 3em;
 }
 
 .bodyResume a{
+    font-size: 1.6em;
+    text-align:left;
 	color: hwb(208 94% 0%);  /* Color inicial */
     transition: color 0.3s ease-in-out; /* Transición suave */
 }
@@ -242,12 +237,12 @@ a:hover {
 }
 
 .bodyResume img{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover; /* Evita distorsión */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    margin: 15px 0; /*Espacio arriba y abajo */
+    margin: auto; /*Espacio arriba y abajo */
 
     /* Posicionamiento */
     display: block; /* Asegura que respete margen automático */
@@ -267,6 +262,23 @@ a:hover {
     border-color: #59f866; 
 } */
 
+.studyCard, .jobsCard{
+    background: rgba(129, 141, 154, 0.74); /* Fondo blanco para la tarjeta */
+    margin: 20px; /* Espaciado externo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 500px; /* Ajusta el ancho máximo */
+    text-align: justify; /* Justifica el texto */
+    overflow: hidden; /* Evita desbordamiento de texto */
+    word-wrap: break-word; /* Permite saltos de línea si es necesario */
+    
+}
+.jobs:hover {
+    box-shadow: 6px 6px 20px rgba(173, 232, 239, 0.938);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
 /* Definir animación */
 @keyframes cambiarBorde {
     0% {
