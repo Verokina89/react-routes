@@ -2,7 +2,7 @@ import { Routes, Route, Link, Router } from 'react-router-dom';
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
-import Footer from './pages/Footer'
+import Contact from './pages/Contac'
 import HeaderNav from './components/HeaderNav';
 
 import './App.css'
@@ -23,7 +23,7 @@ const App = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/resume' element={<Resume />} />
-                <Route path='/footer' element={<Footer />} />
+                <Route path='/contact' element={<Contact />} />
             </Routes>
 
         </>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Footer = () => {
+const Contact = () => {
     return (
-        <footer className='footerInfo'>
+        <footer className='contactInfo'>
             <h2>Información de Contacto</h2>
             <p>📧 veropsuarez@icloud.com</p>
             <h3>Webs: </h3>
@@ -30,4 +30,4 @@ const Footer = () => {
 
     )
 }   
-export default Footer;
+export default Contact;

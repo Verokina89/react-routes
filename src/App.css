@@ -80,10 +80,34 @@ html, body {
     flex-direction: column;
 }
 
-.headerNav{
-	font-size: 1.4em;
-	margin-top: 20px;
+.headerNav {
+    font-size: 1.4em;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px; /* Espaciado interno */
+    border: 2px solid rgba(43, 240, 224, 0.8); /* Borde fino y luminoso */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(43, 240, 224, 0.8); /* Brillo alrededor */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    text-align: center; /* Centra el contenido */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave */
 }
+
+/* Efecto de resplandor al pasar el mouse */
+.headerNav:hover {
+    box-shadow: 0 0 30px rgba(43, 240, 224, 1); /* Brillo más intenso */
+}
+
+@keyframes brillo {
+    0% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
+    50% { box-shadow: 0 0 30px rgba(43, 240, 224, 1); }
+    100% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
+}
+
+.headerNav {
+    animation: brillo 1.5s infinite alternate ease-in-out;
+}
+
 /* 🔹 Cambio de color en el Nav cuando estás en la página actual */
 .headerNav a.active {
     color: rgb(70, 235, 166); /* Cambia el color del enlace activo */
@@ -290,7 +314,7 @@ a:hover {
 }
 
 
-.footerInfo {
+.contactInfo {
     margin-top: 50px;
     display: flex;
     flex-direction: column; /* Elementos en columna */
@@ -302,12 +326,12 @@ a:hover {
 }
 
 
-.footerInfo a{
+.contactInfo a{
 	color: aliceblue;  /* Color inicial */
     transition: color 0.3s ease-in-out; /* Transición suave */
 }
 /* Cambio al pasar el cursor */
-.footerInfo a:hover {
+.contactInfo a:hover {
 	font-size: 1.6em;
     color: #b7ea2a; /* Nuevo color al hacer hover */
     text-decoration: underline;
