@@ -81,9 +81,9 @@ html, body {
 }
 
 .headerNav {
-    font-size: 1.4em;
+    font-size: 1.6em;
     position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px 20px; /* Espaciado interno */
     border: 2px solid rgba(43, 240, 224, 0.8); /* Borde fino y luminoso */
     border-radius: 10px; /* Esquinas redondeadas */
