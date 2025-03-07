@@ -313,16 +313,17 @@ a:hover {
     }
 }
 
-
 .contactInfo {
     margin-top: 50px;
     display: flex;
-    flex-direction: column; /* Elementos en columna */
-    align-items: center;  /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente si el footer es alto */
+    flex-direction: column; /* Cambia de columna a fila */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
     text-align: center;
     padding: 10px;
     width: 100%;
+    gap: 20px; /* Espaciado entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben */
 }
 
 
@@ -335,4 +336,32 @@ a:hover {
 	font-size: 1.6em;
     color: #b7ea2a; /* Nuevo color al hacer hover */
     text-decoration: underline;
+}
+
+.contactContainer {
+    display: flex; /* Alinear en fila */
+    justify-content: space-between; /* Separar los elementos */
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Espacio entre elementos */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px;
+}
+.contactDetails,
+.socialLinks {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    text-align: center;
+    margin: 10 0 0 0;
+    gap: 10px;
+
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: row; /*posiciona uno al lado del otro*/
+    gap: 20px; /* Espacio entre el texto y el icono */
+    justify-content: center;
+    align-items: center;
 }
