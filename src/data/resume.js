@@ -8,7 +8,7 @@ const studies = [
   {
     id: 2,
     title: 'Social Media Marketing en Comercio',
-    institution: 'En Grado, Informática y Gestión S.L.U',
+    institution: 'En Grado, Informática y Gestión S.L.U - EMCAN',
     date: 'Durante el periodo del 04/2024 al 05/2024',
   },
   {

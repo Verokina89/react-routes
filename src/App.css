@@ -129,20 +129,51 @@ html, body {
 .bodyHome img{
     /* Posicionamiento */
     display: block; /* Asegura que respete margen automático */
-    width: 240px;
-    height: 280px;
-    border: 4px solid #2bf0e0;
+    width: 260px;
+    height: 300px;
+    border: 3.6px solid #2bf0e0;
     border-radius: 30%;
-    box-shadow: 2px 4px 46px 7px rgb(238, 228, 37);
     object-fit: cover; /* Evita distorsión */
-    -webkit-box-shadow: 0px 2px 46px 7px rgb(245, 244, 229);
-    -moz-box-shadow: 0px 2px 46px 7px rgb(243, 232, 30); /* Sombra para destacar */
+    /* Sombra animada */
+    box-shadow: 0px 0px 48px 9px rgba(237, 247, 191, 0.944);
+    /* Transiciones y animación */
     transition: border-color 0.2s ease-in-out;
+    
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
+    /* Animación del brillo */
+    animation: brillo 1.5s infinite alternate ease-in-out;
 }
-.bodyHome img:hover {
-    border-color: #e3f859; 
+/* Animación del borde y sombra */
+@keyframes cambiarBorde {
+    0% {
+        border-color: #2bf0e0;
+        box-shadow: 2px 4px 46px 7px rgb(238, 228, 37);
+    }
+    50% {
+        border-color: #da33ff;
+        box-shadow: 2px 4px 46px 7px #da33ff;
+    }
+    100% {
+        border-color: #e3f859;
+        box-shadow: 2px 4px 46px 7px rgb(227, 248, 89);
+    }
 }
+/* Definición de la animación */
+@keyframes brillo {
+    0% { 
+        box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
+        border-color: rgba(43, 240, 224, 0.8);
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(43, 240, 224, 1); 
+        border-color: rgba(43, 240, 224, 1);
+    }
+    100% { 
+        box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
+        border-color: rgba(43, 240, 224, 0.8);
+    }
+}
+
 
 h1{
 	font-size: 3.5em;
@@ -236,7 +267,7 @@ a:hover {
 .bodyResume {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    min-height: 100%; /* Ocupa toda la altura de la pantalla */
     text-align: center;
     margin: 20px 0 200px 0;
     padding: 20px;
@@ -246,6 +277,10 @@ a:hover {
 
 .bodyResume h1{
     font-size: 3em;
+}
+
+.bodyResume p{
+    font-size: 1.3em;
 }
 
 .bodyResume a{
@@ -262,8 +297,8 @@ a:hover {
 }
 
 .bodyResume img{
-    width: 180px;
-    height: 160px;
+    width: 350px;
+    height: 250px;
     border-radius: 30%;
     object-fit: cover; /* Evita distorsión */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
@@ -282,25 +317,60 @@ a:hover {
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
 }
 
-.bodyHome img:hover {
+.bodyResume img:hover {
     border-color: #59f866; 
 } 
 
-.studyCard, .jobsCard{
-    background: rgba(129, 141, 154, 0.74); /* Fondo blanco para la tarjeta */
-    margin: 20px; /* Espaciado externo */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    max-width: auto; /* Ajusta el ancho máximo */
+.profProfile{
+    margin: 20px; /*espaciado externo */
+    padding: 10px; /*espaciado interno */
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 650px; /* Ajusta el ancho máximo */
+    max-height: 650px;
     overflow: hidden; /* Evita desbordamiento de texto */
-    word-wrap: break-word; /* Permite saltos de línea si es necesario */
-    
+    overflow-y: auto; /*barra de desplazamiento vertical*/
+    word-wrap: break-word; /*Permite saltos de línea si es necesario */
 }
+
 .profProfile:hover, .studyCard:hover, .jobsCard:hover {
     box-shadow: 6px 6px 20px rgba(173, 232, 239, 0.938);
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
+}
+
+.studyCard h3{
+    font-size: 1.8em;
+}
+
+.studyCard h4{
+    font-size: 1.3em;
+}
+
+.studyCard, .jobsCard{
+    background: rgba(109, 133, 160, 0.48); /*fondo suave para la tarjeta */
+    margin: 20px; /*espaciado externo */
+    padding: 10px; /* espaciado interno */
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 650px; /*ancho máximo */
+    max-height:650px;
+    overflow: hidden; /*sin desbordamiento del texto */
+    overflow-y: auto; /*barra de desplazamiento vertical*/
+    word-wrap: break-word; /*permite saltos de línea si es necesario */
+    
+}
+
+.logosLenguajesHerramientas{
+    margin: 20px; /* Espaciado externo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Ajusta el ancho máximo */
+    max-height:600px;
+    overflow: hidden; /* Evita desbordamiento de texto */
+    overflow-y: auto; /*barra de desplazamiento vertical*/
+    word-wrap: break-word; /*Permite saltos de línea si es necesario */
 }
 
 /* Definir animación */
