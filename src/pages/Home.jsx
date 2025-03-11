@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
             <div className='bodyHome'>
-                <img src="src/img/2F69C91D-85DA-4496-AC5B-ED70BC5E8A1C_1_105_c-removebg-preview.png" alt="fotoTipoCarnet" />
+                <img src="src/img/fotocarnetPoloRojo025.png" alt="fotoTipoCarnet" />
                 <h1>¡Hola! 👋🏼, Soy Veronica Isabel</h1>
                 <h2>Full Stack Developer & Corporate Journalist </h2>
                 {/* <nav className='navHome'>
