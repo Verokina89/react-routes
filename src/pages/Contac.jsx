@@ -10,7 +10,6 @@ const Contact = () => {
                     <p>📱65555455.</p>
                     <p>📍Cantabria</p>
                 </div>
-                
                 <div className="socialLinks">
                     <div className="gitHub">
                         <a href="https://github.com/Verokina89" target="_blank" rel="noopener noreferrer">
