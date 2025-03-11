@@ -292,17 +292,17 @@ a:hover {
     padding: 20px; /* Espaciado interno */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    max-width: 500px; /* Ajusta el ancho máximo */
-    text-align: justify; /* Justifica el texto */
+    max-width: auto; /* Ajusta el ancho máximo */
     overflow: hidden; /* Evita desbordamiento de texto */
     word-wrap: break-word; /* Permite saltos de línea si es necesario */
     
 }
-.jobs:hover {
+.profProfile:hover, .studyCard:hover, .jobsCard:hover {
     box-shadow: 6px 6px 20px rgba(173, 232, 239, 0.938);
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }
+
 /* Definir animación */
 @keyframes cambiarBorde {
     0% {
@@ -355,7 +355,7 @@ a:hover {
     text-align: center;
     margin: 10 0 0 0;
     gap: 10px;
-
+    cursor:pointer;
 }
 
 .socialLinks {
