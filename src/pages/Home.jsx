@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import fotoCarnet from '../assets/img/fotocarnetPoloRojo025.png'
 // import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <>
             <div className='bodyHome'>
-                <img src="src/img/fotocarnetPoloRojo025.png" alt="fotoTipoCarnet" />
+                <img src={fotoCarnet} alt="fotoCarnet" />
                 <h1>¡Hola! 👋🏼, Soy Veronica Isabel</h1>
                 <h2>Full Stack Developer & Corporate Journalist </h2>
                 {/* <nav className='navHome'>

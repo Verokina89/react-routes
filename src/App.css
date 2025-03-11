@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;500;900&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -63,7 +64,7 @@ body{
 
     /* Imagen de fondo */
     /* background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg); */
-    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('./img/CapturaDress.png');
+    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('/public/img/CapturaDress.png');
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
@@ -125,16 +126,16 @@ html, body {
     min-height: 100vh; /* Ocupa toda la pantalla */
    
 } 
-.bodyHome img, .bodyResume img{
+.bodyHome img{
     /* Posicionamiento */
     display: block; /* Asegura que respete margen automático */
-    width: 300px;
-    height: 300px;
-    border: 6px solid #2bf0e0;
-    border-radius: 50%;
-    box-shadow: 0px 2px 46px 7px rgb(238, 228, 37);
+    width: 240px;
+    height: 280px;
+    border: 4px solid #2bf0e0;
+    border-radius: 30%;
+    box-shadow: 2px 4px 46px 7px rgb(238, 228, 37);
     object-fit: cover; /* Evita distorsión */
-    -webkit-box-shadow: 0px 2px 46px 7px rgb(245, 244, 233);
+    -webkit-box-shadow: 0px 2px 46px 7px rgb(245, 244, 229);
     -moz-box-shadow: 0px 2px 46px 7px rgb(243, 232, 30); /* Sombra para destacar */
     transition: border-color 0.2s ease-in-out;
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;

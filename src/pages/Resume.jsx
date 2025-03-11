@@ -1,11 +1,12 @@
 import { experiences, studies } from '../data/resume';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/img/logoDevprogrammer.png'
 
 function Resume() {
   return (
     <div className='bodyResume'>
-        <img src="/src/img/logoDevprogrammer.png" alt="Logo" />
+        <img src={logo} alt="logo" />
         <h1>Conocimientos & Experiencias</h1>
         <div className='studyCard'>
             <h2>Me he Formado Academicamente como:</h2>

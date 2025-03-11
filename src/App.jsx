@@ -13,6 +13,7 @@ const App = () => {
     
     return (
         <>
+            
             <HeaderNav />
             {/* <nav className="headerNav">
                 <Link to='/'>⌂ Home</Link> |
