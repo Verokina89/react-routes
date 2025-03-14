@@ -64,7 +64,7 @@ body{
 
     /* Imagen de fondo */
     /* background-image: url(./img/desktop-wallpaper-portfolio-developer.jpg); */
-    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('/public/img/CapturaDress.png');
+    background: linear-gradient(rgb(1, 0, 8), rgba(10, 150, 171, 0.412)), url('/img/CapturaDress.png');
     background-repeat: no-repeat;
     background-size: cover;   /* Hace que la imagen cubra toda la pantalla */
     background-position: center;  /* Centra la imagen */
@@ -91,7 +91,7 @@ html, body {
     box-shadow: 0 0 10px rgba(43, 240, 224, 0.8); /* Brillo alrededor */
     background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     text-align: center; /* Centra el contenido */
-    transition: box-shadow 0.3s ease-in-out; /* Transición suave */
+    transition: box-shadow 0.2s ease-in-out; /* Transición suave */
 }
 
 /* Efecto de resplandor al pasar el mouse */
@@ -99,11 +99,11 @@ html, body {
     box-shadow: 0 0 30px rgba(43, 240, 224, 1); /* Brillo más intenso */
 }
 
-@keyframes brillo {
+/* @keyframes brillo {
     0% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
     50% { box-shadow: 0 0 30px rgba(43, 240, 224, 1); }
     100% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
-}
+} */
 
 .headerNav {
     animation: brillo 1.5s infinite alternate ease-in-out;
@@ -141,7 +141,7 @@ html, body {
     
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
     /* Animación del brillo */
-    animation: brillo 1.5s infinite alternate ease-in-out;
+    animation: brillo 1.2s infinite alternate ease-in-out;
 }
 /* Animación del borde y sombra */
 @keyframes cambiarBorde {
@@ -159,7 +159,21 @@ html, body {
     }
 }
 /* Definición de la animación */
-@keyframes brillo {
+/* @keyframes brillo {
+    0% { 
+        box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
+        border-color: rgba(43, 240, 224, 0.8);
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(43, 240, 224, 1); 
+        border-color: rgba(43, 240, 224, 1);
+    }
+    100% { 
+        box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
+        border-color: rgba(43, 240, 224, 0.8);
+    }
+} */
+@keyframes sincronizado {
     0% { 
         box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
         border-color: rgba(43, 240, 224, 0.8);
@@ -173,6 +187,12 @@ html, body {
         border-color: rgba(43, 240, 224, 0.8);
     }
 }
+
+.headerNav,
+.bodyHome img {
+    animation: sincronizado 1.5s infinite alternate ease-in-out;
+}
+
 
 
 h1{

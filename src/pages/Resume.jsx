@@ -1,5 +1,5 @@
 import { experiences, studies } from '../data/resume';
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logoDevprogrammer.png';
 // import from '';
@@ -31,7 +31,7 @@ function Resume() {
                 </ul>       
             </div>
             <div className='jobsCard'>
-                <h2>He Trabajado estos ultimos 4 años como:</h2>
+                <h2>Mis empleos más recientes han sido como:</h2>
                 <ul>
                     {experiences.map((experience) => (
                         <li key={experience.id}>
