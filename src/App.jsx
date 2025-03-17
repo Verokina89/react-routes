@@ -1,37 +1,37 @@
-import { Routes, Route, Link, Router } from 'react-router-dom';
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Resume from './pages/Resume'
-import Contact from './pages/Contac'
-import HeaderNav from './components/HeaderNav';
+// import { Routes, Route, Link, Router } from 'react-router-dom';
+// import Home from './pages/Home'
+// import Projects from './pages/Projects'
+// import Resume from './pages/Resume'
+// import Contact from './pages/Contac'
+// import HeaderNav from './components/HeaderNav';
 
-import './App.css'
-// import reactLogo from '../src/react.svg'
-// import viteLogo from '../src/vite.svg'
+// import './App.css'
+// // import reactLogo from '../src/react.svg'
+// // import viteLogo from '../src/vite.svg'
 
-const App = () => {
+// const App = () => {
     
-    return (
-        <>
+//     return (
+//         <>
             
-            <HeaderNav />
-            {/* <nav className="headerNav">
-                <Link to='/'>⌂ Home</Link> |
-                <Link to='/projects'> Projects</Link> |
-                <Link to='/resume'> Resume Cv</Link> |
-            </nav> */}
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/resume' element={<Resume />} />
-                <Route path='/contact' element={<Contact />} />
-            </Routes>
+//             <HeaderNav />
+//             {/* <nav className="headerNav">
+//                 <Link to='/'>⌂ Home</Link> |
+//                 <Link to='/projects'> Projects</Link> |
+//                 <Link to='/resume'> Resume Cv</Link> |
+//             </nav> */}
+//             <Routes>
+//                 <Route path='/' element={<Home />} />
+//                 <Route path='/projects' element={<Projects />} />
+//                 <Route path='/resume' element={<Resume />} />
+//                 <Route path='/contact' element={<Contact />} />
+//             </Routes>
 
-        </>
-    );
-}
+//         </>
+//     );
+// }
 
-export default App
+// export default App
 
 
 /*notas: el fragment agrupa una lista de hijos sin agregar nodos extra al DOM. Simplemente envuelve y mantiene un clean code. Si se utiliza un section, no es necesario un fragment. Tecnicamente; un fragment se refiere a una característica de React que te permite agrupar un conjunto de elementos hijos sin agregar un nodo adicional al DOM (Documento Object Model) resultante. el fagment es solamente para embolver y nos permite mantener un codigo limpio
