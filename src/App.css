@@ -304,11 +304,13 @@ a:hover {
 }
 
 .bodyResume a{
-    font-size: 1.6em;
+    font-size: 1.8em;
     text-align:left;
-	color: hwb(208 94% 0%);  /* Color inicial */
-    transition: color 0.3s ease-in-out; /* Transición suave */
+    font-weight: bold;
+    color: #2bf0e0;
+    transition: color 0.3s ease-in-out;
 }
+
 /* Cambio al pasar el cursor */
 .bodyResume a:hover {
 	font-size: 1.6em;
@@ -418,8 +420,11 @@ a:hover {
 
 
 .contactInfo a{
-	color: aliceblue;  /* Color inicial */
-    transition: color 0.3s ease-in-out; /* Transición suave */
+    font-size: 1.8em;
+    text-align:left;
+    font-weight: bold;
+    color: #2bf0e0;
+    transition: color 0.3s ease-in-out;
 }
 /* Cambio al pasar el cursor */
 .contactInfo a:hover {
