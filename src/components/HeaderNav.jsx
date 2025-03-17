@@ -1,4 +1,4 @@
-import {   NavLink } from "react-router-dom";
+import {   NavLink, Outlet } from "react-router-dom";
 
 const HeaderNav = () => {
     
@@ -10,7 +10,7 @@ const HeaderNav = () => {
                 <NavLink to='/resume' className={({isActive}) => isActive ? "active" : ""}> Resumen Profesional</NavLink> |
                 <NavLink to='/contact' className={({isActive}) => isActive ? "active" : ""}> Contacto</NavLink>
             </nav>
-        
+            <Outlet />
         </>
     );
 };

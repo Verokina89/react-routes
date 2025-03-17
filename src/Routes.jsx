@@ -3,7 +3,7 @@ import HeaderNav from './components/HeaderNav';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
-import Contact from './pages/Contac';
+import Contact from './pages/Contact';
 import Error404 from './components/Error404';
 import './App.css';
 
