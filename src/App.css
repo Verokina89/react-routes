@@ -113,9 +113,12 @@ html, body {
     100% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
 } */
 
-.headerNav {
+.headerNav, .headerNav a {
+    color: #646cff;
     animation: brillo 1.5s infinite alternate ease-in-out;
 }
+
+
 
 /* 🔹 Cambio de color en el Nav cuando estás en la página actual */
 .headerNav a.active {
