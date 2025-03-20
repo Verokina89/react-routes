@@ -45,7 +45,7 @@ table {
 	border-spacing: 0;
 }
 
-/*--- DESDE AQUÍ----- */
+/*--- DESDE AQUÍ MI CÓDIGO----- */
 
 #root {
 	max-width: 1280px;
@@ -100,6 +100,8 @@ html, body {
     background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     text-align: center; /* Centra el contenido */
     transition: box-shadow 0.2s ease-in-out; /* Transición suave */
+    color: #46eba6;
+    animation: brillo 1.5s infinite alternate ease-in-out;
 }
 
 /* Efecto de resplandor al pasar el mouse */
@@ -107,22 +109,11 @@ html, body {
     box-shadow: 0 0 30px rgba(43, 240, 224, 1); /* Brillo más intenso */
 }
 
-/* @keyframes brillo {
-    0% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
-    50% { box-shadow: 0 0 30px rgba(43, 240, 224, 1); }
-    100% { box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); }
-} */
-
-.headerNav {
-    color: #46eba6;
-    animation: brillo 1.5s infinite alternate ease-in-out;
-}
-
 .headerNav a {
     color: #646cff;
 }
 
-/* 🔹 Cambio de color en el Nav cuando estás en la página actual */
+/*---cambio de color en el Nav posicionandose en la página actual---*/
 .headerNav a.active {
     color: rgb(70, 235, 166); /* Cambia el color del enlace activo */
     font-weight: bold;
@@ -156,6 +147,8 @@ html, body {
     /* Animación del brillo */
     animation: brillo 1.2s infinite alternate ease-in-out;
 }
+
+/*---Definición de la animación---*/
 /* Animación del borde y sombra */
 @keyframes cambiarBorde {
     0% {
@@ -171,21 +164,7 @@ html, body {
         box-shadow: 2px 4px 46px 7px rgb(227, 248, 89);
     }
 }
-/* Definición de la animación */
-/* @keyframes brillo {
-    0% { 
-        box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
-        border-color: rgba(43, 240, 224, 0.8);
-    }
-    50% { 
-        box-shadow: 0 0 30px rgba(43, 240, 224, 1); 
-        border-color: rgba(43, 240, 224, 1);
-    }
-    100% { 
-        box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
-        border-color: rgba(43, 240, 224, 0.8);
-    }
-} */
+
 @keyframes sincronizado {
     0% { 
         box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
@@ -206,7 +185,7 @@ html, body {
     animation: sincronizado 1.5s infinite alternate ease-in-out;
 }
 
-h1{
+h1 {
 	font-size: 3.5em;
     font-weight: 900;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra negra difuminada */
@@ -216,14 +195,14 @@ h1{
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
-h2{
+h2 {
     font-size: 2.2em;
 	line-height: 1.1;
     margin: 20px;
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
-h3{
+h3 {
 	font-size: 1.4em;
     margin: 20px;
     margin-top: 10px;
@@ -231,7 +210,7 @@ h3{
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
-p{
+p {
 	font-size: 1.4em;
     max-width: 600px; /* Limita el ancho para que sea mas legible */
     line-height: 1.2;
@@ -239,7 +218,7 @@ p{
     text-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
-a{
+a {
     font-size: 1.2em;
 	color: #2bf0e0;
 	text-decoration: none;
@@ -252,20 +231,28 @@ a:hover {
     text-decoration: underline;
 }
 
+/*---Proyectos---*/
 .bodyProjcts {
 	display: flex;
     flex-direction: column; /* Elementos en columna */
     align-items: center;  /* Centra horizontalmente */
     justify-content: center; /* Centra verticalmente  */
     text-align: center;
-    margin: 20px 0 200px 0;
-	padding: 50px;
     width: 100%;
+    min-height: 100vh;
+	padding: 10px;
 }
-.bodyProjcts ul{
+
+.bodyProjects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptable según el tamaño */
+    gap: 20px;
     width: 100%;
-    max-width: 800px; /* Define un ancho máximo para no expandir demasiado */
+    max-width: 800px; /* Define un ancho máximo para no expandir demasiado*/
+    padding: 0;
+    margin-top: 20px;
 }
+
 .bodyProjcts li {
     display: flex;
     flex-direction: column;
@@ -273,17 +260,21 @@ a:hover {
     text-align: center;
     margin-bottom: 40px; /* Espacio entre proyectos */
 }
+
 .bodyProjcts img {
-    width: 680px; /* Ajusta el tamaño de las imágenes */
-    height: auto; /* Mantiene la proporción */
+    max-width: 80%;
+    height: auto; /* Mantiene la proporción*/
     border-radius: 10px; /* Opcional: esquinas redondeadas */
+
     /* Sombra para mayor profundidad */
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(0, 0, 0, 0.4);
     margin: 15px 0; /*espacio arriba y abajo */
-}
+} 
+
+/*enlace a pagina deproyectos*/
 .bodyProjcts a {
-    display: block; /*ocupa toda la línea */
-    margin-top: 10px; /* Espacio con la imagen */
+    display: block; /*ocupa toda la línea*/
+    margin-top: 10px; /* Espacio con la imagen*/
     font-size: 1.5em;
     font-weight: bold;
     color: #2bf0e0;
@@ -291,10 +282,11 @@ a:hover {
 }
 .bodyProjcts a:hover {
     font-size: 1.8em;
-    color: #b7ea2a; /* Nuevo color al hacer hover */
+    color: #b7ea2a; /* Nuevo color al hacer hover*/
     text-decoration: underline;
-}
+} 
 
+/*---Resumen Profesional*/
 .bodyResume {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
@@ -322,7 +314,7 @@ a:hover {
     transition: color 0.3s ease-in-out;
 }
 
-/* Cambio al pasar el cursor */
+/*cambia al pasar el cursor */
 .bodyResume a:hover {
 	font-size: 1.6em;
     color: #b7ea2a; /* Nuevo color al hacer hover */
@@ -337,16 +329,16 @@ a:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
     margin: auto; /*Espacio arriba y abajo */
 
-    /* Posicionamiento */
+    /*posicionamiento */
     display: block; /* Asegura que respete margen automático */
     
-    /* Borde inicial*/
+    /*borde inicial*/
     border: 4px solid #2bf0e0;
 
-    /*Transición*/
+    /*transición*/
     transition: border-color 0.2s ease-in-out;
 
-    /* Animación */
+    /*animación */
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
 }
 
@@ -416,6 +408,7 @@ a:hover {
     }
 }
 
+/*---Contacto*/
 .contactInfo {
     margin-top: 50px;
     display: flex;
@@ -429,7 +422,6 @@ a:hover {
     flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben */
 }
 
-
 .contactInfo a{
     font-size: 1.8em;
     text-align:left;
@@ -437,7 +429,7 @@ a:hover {
     color: #2bf0e0;
     transition: color 0.3s ease-in-out;
 }
-/* Cambio al pasar el cursor */
+/*cambia al pasar el cursor */
 .contactInfo a:hover {
 	font-size: 1.6em;
     color: #b7ea2a; /* Nuevo color al hacer hover */
@@ -454,6 +446,7 @@ a:hover {
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px;
 }
+
 .contactDetails,
 .socialLinks {
     display: flex;
@@ -472,7 +465,8 @@ a:hover {
     align-items: center;
 }
 
-/*---Responsive---*/
+
+/*---Responsive a todas las pantallas---*/
 
 /* ajustes para pantalals entre (768px - 1024px) */
 @media screen and (max-width: 1024px) {
@@ -520,9 +514,22 @@ a:hover {
         font-size: 1.5em;
     }
 
+    li {
+        width: 90%; /* Ajusta el tamaño para pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
     p {
+        text-align: center;
+        padding: 10px;
         font-size: 1em;
         line-height: 1.4;
+    }
+
+    .bodyProjcts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -544,7 +551,14 @@ a:hover {
         font-size: 1.3em;
     }
 
+    li {
+        width: 90%; /* Ajusta el tamaño para pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
     p {
+        text-align: center;
+        padding: 10px;
         font-size: 0.9em;
     }
 }
