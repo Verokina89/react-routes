@@ -89,6 +89,7 @@ html, body {
     flex-direction: column;
 }
 
+/*---BARRA NAVEGACIÓN---*/
 .headerNav {
     font-size: 1.6em;
     position: relative;
@@ -120,6 +121,7 @@ html, body {
     text-decoration: underline;
 }
 
+/*---HOME---*/
 .bodyHome {
     margin-top: 0;
     display: flex;
@@ -164,7 +166,6 @@ html, body {
         box-shadow: 2px 4px 46px 7px rgb(227, 248, 89);
     }
 }
-
 @keyframes sincronizado {
     0% { 
         box-shadow: 0 0 20px rgba(43, 240, 224, 0.8); 
@@ -231,7 +232,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/*---Proyectos---*/
+/*---PROYECTOS---*/
 .bodyProjcts {
 	display: flex;
     flex-direction: column; /* Elementos en columna */
@@ -271,7 +272,7 @@ a:hover {
     margin: 15px 0; /*espacio arriba y abajo */
 } 
 
-/*enlace a pagina deproyectos*/
+/*enlaces a paginas de proyectos*/
 .bodyProjcts a {
     display: block; /*ocupa toda la línea*/
     margin-top: 10px; /* Espacio con la imagen*/
@@ -286,7 +287,7 @@ a:hover {
     text-decoration: underline;
 } 
 
-/*---Resumen Profesional*/
+/*---RESUMEN PROFESIONAL*/
 .bodyResume {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
@@ -530,6 +531,18 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .bodyProjects h1 {
+        font-size: 2.5em;
+    }
+    
+    .bodyProjects ul {
+        grid-template-columns: 1fr;
+    }
+
+    .bodyProjects li {
+        padding: 15px;
     }
 }
 
