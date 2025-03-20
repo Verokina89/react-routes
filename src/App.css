@@ -206,8 +206,6 @@ html, body {
     animation: sincronizado 1.5s infinite alternate ease-in-out;
 }
 
-
-
 h1{
 	font-size: 3.5em;
     font-weight: 900;
@@ -472,4 +470,81 @@ a:hover {
     gap: 20px; /* Espacio entre el texto y el icono */
     justify-content: center;
     align-items: center;
+}
+
+/*---Responsive---*/
+
+/* ajustes para pantalals entre (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    #root {
+        max-width: 95%;
+        padding: 0.8rem;
+    }
+
+    .headerNav {
+        font-size: 1.4em;
+        padding: 8px 16px;
+    }
+
+    .bodyHome img {
+        width: 220px;
+        height: 260px;
+    }
+}
+
+/*para dispositivos móviles (hasta 768px) */
+@media screen and (max-width: 768px) {
+    #root {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+
+    .headerNav {
+        font-size: 1.2em;
+        padding: 6px 12px;
+        border-width: 2px; /* Reduce grosor del borde */
+    }
+
+    .bodyHome {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .bodyHome img {
+        width: 180px;
+        height: 200px;
+        border-radius: 20%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+}
+
+/*dispositivos pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+    .headerNav {
+        font-size: 1em;
+        padding: 5px 10px;
+        border-width: 1.5px;
+    }
+
+    .bodyHome img {
+        width: 150px;
+        height: 180px;
+        border-radius: 15%;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
 }
