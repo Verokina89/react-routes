@@ -244,7 +244,7 @@ a:hover {
 	padding: 10px;
 }
 
-.bodyProjects ul {
+.bodyProjcts ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptable según el tamaño */
     gap: 20px;
@@ -288,15 +288,17 @@ a:hover {
 } 
 
 /*---RESUMEN PROFESIONAL*/
+
 .bodyResume {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    align-items: center;
     min-height: 100%; /* Ocupa toda la altura de la pantalla */
     text-align: center;
-    margin: 20px 0 200px 0;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
-    width: 100%;
 }
 
 .bodyResume h1{
@@ -323,8 +325,8 @@ a:hover {
 }
 
 .bodyResume img{
-    width: 350px;
-    height: 250px;
+    max-width: 100%;
+    height: auto;
     border-radius: 30%;
     object-fit: cover; /* Evita distorsión */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
@@ -469,7 +471,7 @@ a:hover {
 
 /*---Responsive a todas las pantallas---*/
 
-/* ajustes para pantalals entre (768px - 1024px) */
+/*media query: pantallas entre (768px - 1024px) */
 @media screen and (max-width: 1024px) {
     #root {
         max-width: 95%;
@@ -487,8 +489,8 @@ a:hover {
     }
 }
 
-/*para dispositivos móviles (hasta 768px) */
-@media screen and (max-width: 768px) {
+/*media query: pantallas (hasta 768px) */
+@media screen and (max-width: 778px) {
     #root {
         max-width: 100%;
         padding: 0.5rem;
@@ -497,33 +499,33 @@ a:hover {
     .headerNav {
         font-size: 1.2em;
         padding: 6px 12px;
-        border-width: 2px; /* Reduce grosor del borde */
+        border-width: 2px; /* para que reduzca el grosor del borde */
     }
 
     .bodyHome {
-        padding: 20px;
+        padding: 15px;
         text-align: center;
     }
 
     .bodyHome img {
-        width: 180px;
-        height: 200px;
+        width: 170px;
+        height: 190px;
         border-radius: 20%;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     li {
-        width: 90%; /* Ajusta el tamaño para pantallas pequeñas */
-        margin-bottom: 20px;
+        width: 85%;
+        margin-bottom: 15px;
     }
 
     p {
         text-align: center;
-        padding: 10px;
-        font-size: 1em;
+        padding: 8px;
+        font-size: 0.95em;
         line-height: 1.4;
     }
 
@@ -533,45 +535,191 @@ a:hover {
         align-items: center;
     }
 
-    .bodyProjects h1 {
-        font-size: 2.5em;
+    .bodyProjcts h1, h2 {
+        font-size: 2em;
     }
     
-    .bodyProjects ul {
+    .bodyProjcts ul {
         grid-template-columns: 1fr;
     }
 
-    .bodyProjects li {
-        padding: 15px;
+    .bodyProjcts li {
+        padding: 12px;
+    }
+
+    .bodyResume {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .studyCard ul, .jobsCard ul {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 95%;
+        padding: 12px;
     }
 }
 
-/*dispositivos pequeños (hasta 480px) */
-@media screen and (max-width: 480px) {
+/* media query: dispositivos pequeños (hasta 500px) */
+@media screen and (max-width: 500px) {
     .headerNav {
-        font-size: 1em;
-        padding: 5px 10px;
+        font-size: 0.95em;
+        padding: 6px 8px;
         border-width: 1.5px;
     }
 
     .bodyHome img {
-        width: 150px;
-        height: 180px;
+        width: 130px;
+        height: 160px;
         border-radius: 15%;
     }
 
-    h1 {
-        font-size: 1.3em;
+    h1, h2 {
+        font-size: 1.4em;
     }
 
     li {
-        width: 90%; /* Ajusta el tamaño para pantallas pequeñas */
+        width: 85%; /*ajusta a pantallas pequeñas */
         margin-bottom: 20px;
     }
 
     p {
         text-align: center;
-        padding: 10px;
-        font-size: 0.9em;
+        padding: 8px;
+        font-size: 0.85em;
     }
+
+    .bodyProjcts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .bodyProjcts a {
+        font-size: 1.1em;
+    }
+
+    .bodyResume {
+        display: flex;
+        flex-direction: column;
+        text-align: center; /* Asegura que el texto quede centrado */
+        width: 90%; /* Se ajusta mejor a la pantalla */
+        padding: 10px;
+        gap: 12px; /* Espacio entre los elementos */
+    }
+
+    .bodyResume img {
+        max-width: 100%; /* Reduce la imagen para que no ocupe toda la pantalla */
+        border-width: 1.5px; /*lineas del borde*/
+    }
+
+    .bodyResume h1 { 
+        font-size: 1.8em;
+        margin-left: 10px;
+    }
+
+    .bodyResume p { 
+        font-size: 1.2em;
+    }
+
+    .bodyResume h2{
+        font-size: 1.6em;
+    }
+
+    .bodyResume h3{
+        font-size: 1.2em;
+    }
+
+    .contactInfo {
+        flex-direction: column; /* Se organiza en columna */
+        align-items: center; /* Centrado */
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-left: -30px;
+    }
+
+    .contactContainer {
+        flex-direction: column; /* Cambia de fila a columna */
+        align-items: center; /* Centra los elementos */
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .contactDetails, .socialLinks {
+        width: 90%; /* Ajusta el ancho para que no desborde */
+        text-align: center;
+        justify-content: center;
+    }
+
+    .socialLinks {
+        flex-wrap: wrap; /* Permite que los elementos se acomoden */
+        gap: 10px;
+    }
+
+    .socialLinks svg, .socialLinks a {
+        width: 38px;  /* Reduce el ancho */
+        height: 36px; /* Reduce la altura */
+        font-size: 0.99em;
+    }
+
+    .gitHub, .gitHub {
+        margin-right: 10px;
+    }
+
+     
+
+}
+
+/* Dispositivos móviles pequeños (hasta 375px) */
+@media screen and (max-width: 375px) {
+    .headerNav {
+        font-size: 0.9em;
+        padding: 4px 8px;
+        border-width: 1.2px;
+    }
+
+    .bodyHome img {
+        width: 120px;
+        height: 140px;
+        border-radius: 12%;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    li {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    p {
+        text-align: center;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .bodyProjects h1 {
+        font-size: 2em;
+    }
+
+    .bodyProjects ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .bodyResumeContainer {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas aún más pequeñas */
+    }
+    
 }

@@ -1,11 +1,15 @@
 import { experiences, studies } from '../data/resume';
 
 import { Link } from 'react-router-dom';
-import logo from '../assets/img/logoDevprogrammer.png';
-// import from '';
-// import from '';
-// import from '';
-// import from '';
+import logo from '../assets/img/LogoDevShort.png';
+import logoHtml from '../assets/img/icons8-html.svg';
+import logoCss from '../assets/img/icons8-css.svg';
+import logoJS from '../assets/img/icons8-javascript.svg';
+import logoReact from '../assets/img/react.svg';
+import logoNode from '../assets/img/icons8-node-js.svg';
+import logoExpress from '../assets/img/express-svgrepo-com.svg';
+import logoMongo from '../assets/img/mongoDB.png';
+import logoMySQL from '../assets/img/mysql-logo-svgrepo-com.svg';
 
 
 function Resume() {
@@ -44,12 +48,17 @@ function Resume() {
             </div>
             <div className='logosLenguajesHerramientas'>
                 <h2>AQUI VAN LOS ICONOS Lenguajes&Tecnologias</h2>
-                {/* 
-                <img src={} alt="logo" />
-                <img src={} alt="logo" />
-                <img src={} alt="logo" />
-                <img src={} alt="logo" />
-                */}
+                
+                <img src={logoHtml} alt="logoHtml" />
+                <img src={logoCss} alt="logoCss" />
+                <img src={logoJS} alt="logoJS" />
+                <img src={logoReact} alt="logoReact" />
+                <img src={logoNode} alt="logoNode" />
+                <img src={logoExpress} alt="logoExpress" />
+                <img src={logoMongo} alt="logoMongo" />
+                <img src={logoMySQL} alt="logoMySQL" />
+                
+                
             </div> 
         <br />
         <Link to="/">Inicio</Link>    

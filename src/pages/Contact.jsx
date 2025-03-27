@@ -6,7 +6,7 @@ const Contact = () => {
             <h1>Información de Contacto</h1>
             <div className="contactContainer">
                 <div className="contactDetails">
-                    <p>  veropsuarez@icloud.com</p>
+                    <p> veropsuarez@icloud.com</p>
                     <p>📱 65555455.</p>
                     <p>📍 Cantabria</p>
                 </div>
@@ -27,7 +27,7 @@ const Contact = () => {
             </div>
 
             <br />
-            <h3>Todos los derechos reservados.</h3>
+            <h4>Todos los derechos reservados.</h4>
             <Link to="/">Inicio</Link>
         </div>
 
