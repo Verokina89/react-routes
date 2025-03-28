@@ -15,7 +15,7 @@ function Projects () {
   return (
     <>
       <div className='bodyProjcts'>
-        <h1>Proyectos</h1>
+        <h1>Proyectos </h1>
         <ul>
           {projectsData.map((project) => (
             <li key={project.id}>
@@ -29,7 +29,6 @@ function Projects () {
             </li>
           ))}
         </ul>
-        <br />
         <Link to="/">Inicio</Link>
       </div>
     </>

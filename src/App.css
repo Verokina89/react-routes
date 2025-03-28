@@ -235,7 +235,7 @@ a:hover {
 /*---PROYECTOS---*/
 .bodyProjcts {
 	display: flex;
-    flex-direction: column; /* Elementos en columna */
+    flex-direction: column; /*Elementos en columna */
     align-items: center;  /* Centra horizontalmente */
     justify-content: center; /* Centra verticalmente  */
     text-align: center;
@@ -246,24 +246,28 @@ a:hover {
 
 .bodyProjcts ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adaptable según el tamaño */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /*adaptada al tamaño */
+    justify-items: center; /* Centra los elementos */
     gap: 20px;
     width: 100%;
-    max-width: 800px; /* Define un ancho máximo para no expandir demasiado*/
+    max-width: 100%; /*define ancho máximo para no expandir demasiado*/
     padding: 0;
     margin-top: 20px;
 }
 
 .bodyProjcts li {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos dentro del <li> */
+    flex-direction: column; /*fija alineación vertical*/
+    align-items: center; /*centra los elementos dentro del <li> */
     text-align: center;
-    margin-bottom: 40px; /* Espacio entre proyectos */
+    margin: 10px;
+    padding: 14px;
+    background: rgba(109, 133, 160, 0.48);
+    border-radius: 12px;
 }
 
 .bodyProjcts img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto; /* Mantiene la proporción*/
     border-radius: 10px; /* Opcional: esquinas redondeadas */
 
@@ -325,7 +329,7 @@ a:hover {
 }
 
 .bodyResume img{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 30%;
     object-fit: cover; /* Evita distorsión */
@@ -336,7 +340,7 @@ a:hover {
     display: block; /* Asegura que respete margen automático */
     
     /*borde inicial*/
-    border: 4px solid #2bf0e0;
+    border: 2px solid #2bf0e0;
 
     /*transición*/
     transition: border-color 0.2s ease-in-out;
@@ -362,6 +366,7 @@ a:hover {
 }
 
 .profProfile:hover, .studyCard:hover, .jobsCard:hover {
+
     box-shadow: 6px 6px 20px rgba(173, 232, 239, 0.938);
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
@@ -381,23 +386,28 @@ a:hover {
     padding: 10px; /* espaciado interno */
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 650px; /*ancho máximo */
-    max-height:650px;
+    max-width: 600px; /*ancho máximo */
+    max-height: 600px;
     overflow: hidden; /*sin desbordamiento del texto */
     overflow-y: auto; /*barra de desplazamiento vertical*/
     word-wrap: break-word; /*permite saltos de línea si es necesario */
     
 }
 
-.logosLenguajesHerramientas{
-    margin: 20px; /* Espaciado externo */
-    padding: 10px; /* Espaciado interno */
+.logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height:600px;
+    margin: 10px auto; /*espacio externo */
+
+    padding: 34px; /*espacio interno*/
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 600px; /* Ajusta el ancho máximo */
-    max-height:600px;
-    overflow: hidden; /* Evita desbordamiento de texto */
-    overflow-y: auto; /*barra de desplazamiento vertical*/
+    /* overflow: hidden; Evita desbordamiento de texto */
     word-wrap: break-word; /*Permite saltos de línea si es necesario */
 }
 

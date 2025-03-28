@@ -5,7 +5,7 @@ import shopKianela from '../assets/img/shopbykianelaProjectReact.png';
 const projects = [
   {
     id: 1,
-    name: 'Vips Dasboard.',
+    name: 'Vips Dasboard Project Break Frontend',
     image: dashboardProject,
     description: 'Creacion de un web basada en un Dashboard que contiene herramientas de ayudas para el escritorio personal.',
     url: 'https://verokina89.github.io/project-break-dashboard/index.html',
