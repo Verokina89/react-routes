@@ -46,8 +46,7 @@ function Resume() {
                     ))}
                 </ul>
             </div>
-            <div className='logosLenguajesHerramientas'>
-                <h2>AQUI VAN LOS ICONOS Lenguajes&Tecnologias</h2>
+            <div className='logos'>
                 
                 <img src={logoHtml} alt="logoHtml" />
                 <img src={logoCss} alt="logoCss" />
