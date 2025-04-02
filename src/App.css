@@ -329,18 +329,14 @@ a:hover {
 }
 
 .bodyResume img{
-    max-width: 80%;
-    height: auto;
-    border-radius: 30%;
-    object-fit: cover; /* Evita distorsión */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    margin: auto; /*Espacio arriba y abajo */
-
-    /*posicionamiento */
-    display: block; /* Asegura que respete margen automático */
     
+    max-width: 80%;
+    height: 80%;
+    object-fit: cover; /*evita distorsión */
     /*borde inicial*/
     border: 2px solid #2bf0e0;
+    border-radius: 30%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /*sombra para destacar */
 
     /*transición*/
     transition: border-color 0.2s ease-in-out;
@@ -348,6 +344,8 @@ a:hover {
     /*animación */
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
 }
+
+
 
 .bodyResume img:hover {
     border-color: #59f866; 
@@ -397,14 +395,13 @@ a:hover {
 .logos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     max-width: 400px;
-    max-height:600px;
+    max-height: 600px;
     margin: 10px auto; /*espacio externo */
-
-    padding: 34px; /*espacio interno*/
+    padding: 30px; /*espacio interno*/
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     /* overflow: hidden; Evita desbordamiento de texto */
@@ -647,9 +644,17 @@ a:hover {
         font-size: 1.2em;
     }
 
+    .logos {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /*se reduce el tamaño*/
+        gap: 10px; /*menos espacio entre elementos */
+        max-width: 90%; 
+        max-height: auto;
+        padding: 20px; 
+    }
+
     .contactInfo {
-        flex-direction: column; /* Se organiza en columna */
-        align-items: center; /* Centrado */
+        flex-direction: column; /*organizacion en columna*/
+        align-items: center;
         text-align: center;
         width: 100%;
         margin: auto;
@@ -657,21 +662,21 @@ a:hover {
     }
 
     .contactContainer {
-        flex-direction: column; /* Cambia de fila a columna */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         gap: 15px;
         width: 100%;
     }
 
     .contactDetails, .socialLinks {
-        width: 90%; /* Ajusta el ancho para que no desborde */
+        width: 90%; /*ajusta el ancho para evitar desborde */
         text-align: center;
         justify-content: center;
     }
 
     .socialLinks {
-        flex-wrap: wrap; /* Permite que los elementos se acomoden */
+        flex-wrap: wrap; /*acomoda elementos */
         gap: 10px;
     }
 
@@ -684,8 +689,6 @@ a:hover {
     .gitHub, .gitHub {
         margin-right: 10px;
     }
-
-     
 
 }
 
@@ -731,5 +734,12 @@ a:hover {
     .bodyResumeContainer {
         grid-template-columns: 1fr; /* Una sola columna en pantallas aún más pequeñas */
     }
+
+    .logos {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Reduce aún más el tamaño */
+        gap: 8px;
+        padding: 15px;
+    }
+
     
 }
