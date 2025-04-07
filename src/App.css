@@ -310,7 +310,20 @@ a:hover {
 }
 
 .bodyResume p{
-    font-size: 1.3em;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+.bodyResume h3{
+    font-size: 1.4em;
+}
+
+.bodyResume h4{
+    font-size: 1.2em;
+}
+
+.bodyResume li {
+    margin-bottom: 20px;
 }
 
 .bodyResume a{
@@ -390,6 +403,8 @@ a:hover {
     word-wrap: break-word; /*permite saltos de línea si es necesario */
     
 }
+
+
 
 .logos{
     display: grid;
