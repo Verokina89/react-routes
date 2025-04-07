@@ -6,9 +6,9 @@ const Contact = () => {
             <h1>Información de Contacto</h1>
             <div className="contactContainer">
                 <div className="contactDetails">
-                    <p> veropsuarez@icloud.com</p>
-                    <p>📱 65555455.</p>
-                    <p>📍 Cantabria</p>
+                    <p> veropsuarez@icloud.com / v.isabel1989@gmail.com</p>
+                    <p>📱 684298345</p>
+                    <p>📍 Castro Urdiales. Cantabria</p>
                 </div>
                 <div className="socialLinks">
                     <div className="gitHub">
