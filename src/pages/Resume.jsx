@@ -13,7 +13,7 @@ import logoMySQL from '../assets/img/mysql-logo-svgrepo-com.svg';
 import logoGit from '../assets/img/icons8-git.svg'
 import logoFigma from '../assets/img/figma-brands.svg'
 import logoWordpress from '../assets/img/wordpress-brands-solid.svg'
-import logoAppleStore from '../assets/img/apple-store-126-svgrepo-com.svg'
+import logoAppleStore from '../assets/img/icons8-ios-logo.svg'
 import logoCanva from '../assets/img/canva-svgrepo-com.svg'
 
 function Resume() {

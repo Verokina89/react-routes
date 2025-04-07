@@ -329,23 +329,22 @@ a:hover {
 }
 
 .bodyResume img{
-    
     max-width: 80%;
     height: 80%;
     object-fit: cover; /*evita distorsión */
     /*borde inicial*/
-    border: 2px solid #2bf0e0;
     border-radius: 30%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /*sombra para destacar */
-
+    border: 2px solid #2bf0e0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    /*sombra para destacar */
+    margin: auto; /*Espacio arriba y abajo */
+    /*-Posicionamiento-*/
+    display: block; /* Asegura que respete margen automático */
     /*transición*/
     transition: border-color 0.2s ease-in-out;
-
     /*animación */
     animation: cambiarBorde 1.2s infinite alternate ease-in-out;
 }
-
-
 
 .bodyResume img:hover {
     border-color: #59f866; 
