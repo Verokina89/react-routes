@@ -128,4 +128,16 @@ noopener → Evita que la nueva pestaña tenga acceso a window.opener, lo que pr
 noreferrer → Evita que el sitio destino vea la URL de referencia (el sitio desde donde se hizo clic).
 Con estas propiedades, garantizas que el enlace se abra en una nueva ventana de forma segura y sin exponer la fuente de navegación. 🚀
 
-## 
+## Explicacion del componente EmailContact.jsx:  
+
+Se utiliza useState para gestionar los campos del formulario (correo, asunto y mensaje).
+La función handleChange actualiza el estado con los valores ingresados.
+La función handleSubmit previene el comportamiento por defecto (recargar la página) y muestra los datos en la consola. Aquí es donde integrarías el servicio de envío de correos.
+El formulario se estructura con inputs y un textarea, y se envuelve en un contenedor (emailContactContainer).
+
+Estilos en App.css:
+
+.emailContactContainer: Define el aspecto de la tarjeta, con fondo translúcido, padding, bordes redondeados y una sombra suave.
+.emailContactForm: Utiliza flexbox en columna para organizar los campos del formulario con un espacio uniforme (gap).
+Los inputs, textarea y el botón tienen estilos coherentes con los de tus otras tarjetas.
+La media query para pantallas hasta 500px ajusta los tamaños y paddings para dispositivos móviles.

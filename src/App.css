@@ -500,6 +500,51 @@ a:hover {
     align-items: center;
 }
 
+/*---EmailContact---*/
+
+.emailContactContainer {
+    background: rgba(109, 133, 160, 0.48); /* Fondo translúcido similar a otras tarjetas */
+    margin: 20px auto;                      /* Centrado horizontal y margen vertical */
+    padding: 20px;                          /* Espaciado interno uniforme */
+    border-radius: 10px;                    /* Bordes redondeados */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    max-width: 600px;                       /* Ancho máximo para pantallas grandes */
+    text-align: center;                     /* Centrado del contenido */
+}
+  
+/* Estilo para el formulario dentro de la tarjeta */
+.emailContactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre campos */
+}
+  
+/* Estilo para los inputs y textarea */
+.emailContactForm input,
+.emailContactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+  
+/* Estilo para el botón de envío */
+.emailContactForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2bf0e0;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.emailContactForm button:hover {
+    background-color: #59f866;
+}
+
+
 
 /*---RESPONSIVE a todas las pantallas---*/
 /*media query: pantallas entre (768px - 1024px) */
@@ -713,6 +758,22 @@ a:hover {
     .gitHub, .gitHub {
         margin-right: 10px;
     }
+
+    .emailContactContainer {
+        width: 90%;
+        padding: 15px;
+      }
+    
+      .emailContactForm input,
+      .email-contact-form textarea {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+    
+      .emailContactForm button {
+        font-size: 1em;
+        padding: 8px;
+      }
 
 }
 

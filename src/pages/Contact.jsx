@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import EmailContact from "../components/EmailContact";
+
 const Contact = () => {
     return (
         <div className='contactInfo'>
             <h1>Información de Contacto</h1>
             <div className="contactContainer">
                 <div className="contactDetails">
-                    <p> veropsuarez@icloud.com / v.isabel1989@gmail.com</p>
+                    <p>email:  veropsuarez@icloud.com / v.isabel1989@gmail.com</p>
                     <p>📱 684298345</p>
                     <p>📍 Castro Urdiales. Cantabria</p>
                 </div>
@@ -26,6 +28,7 @@ const Contact = () => {
                 </div>
             </div>
 
+            <EmailContact />
             <br />
             <h4>Todos los derechos reservados.</h4>
             <Link to="/">Inicio</Link>
