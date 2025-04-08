@@ -34,11 +34,11 @@ Primero, definimos las rutas de nuestro proyecto en el archivo `routes`. Usando 
 
 3. **Páginas de contenido:**
 
-Creamos los componentes `Home`, `Projects` y `Resume` dentro de la carpeta `páginas` que se renderizarán en las rutas correspondientes. Estos componentes simplemente muestran un mensaje de bienvenida, una lista de proyectos y una lista de experiencias laborales y educativas, respectivamente.
+Creamos los componentes `Home`, `Projects`, `Resume` y `Contact` dentro de la carpeta `pages` que se renderizarán en las rutas correspondientes. Estos componentes simplemente muestran un mensaje de bienvenida, una lista de proyectos y una lista de experiencias laborales y educativas, respectivamente.
 
-- Home: Bienvenida y enlaces a projects y resume 
-- Projects: información de `project.js`
-- Resume: información de `resume.js`
+- Home: Saludo y barra de navegacion entre las paginas.
+- Projects: información de `project.js` y enlaces a cada projecto (sitio web) con su respectivo codigo.
+- Resume: información de `resume.js` y enlance a repositorio de git segun el lenguaje.
 
 Para poder editar más fácilmente el contenido de las páginas, creamos dos archivos en la carpeta `data` que contienen la información que se mostrará en las páginas de proyectos y currículum. El primer archivo se llamará projects.js y exportará un array con los proyectos, con los siguientes campos ` ( id, name, image, description, url)`. El segundo archivo se llamará resume.js y exportará dos arrays, uno con la experiencia laboral y otro con la educación, con los siguientes campos `studies (id, title, institution, date)` y `experiences (id, title, company, date)`.
 
