@@ -46,7 +46,6 @@ Bienvenid@ a mi portfolio personal, creado con **React** y gestionado con **Reac
 ---
 
 ### 📫 How to reach me:
- <img src="https://github.com/Verokina89/verokina89/blob/main/4D0CB1BF-9907-4E22-BE17-CC267F9A16C4_1_105_c.jpeg" width="60%" />
  
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/verokina_89/)
   
