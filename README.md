@@ -35,16 +35,6 @@ Bienvenid@ a mi portfolio personal, creado con **React** y gestionado con **Reac
 
 ---
 
-## ⚙️ Instalación
-
-```bash
-git clone https://github.com/verokina89/react-routes.git
-cd react-routes
-npm install
-npm run dev
-
----
-
 ---
 
 ## 📚 Recursos y aprendizaje
