@@ -1,143 +1,67 @@
-# React Router
+# 🌐 Portfolio con React Router
 
-En este proyecto se muestra el uso de React Router para la navegación entre páginas. Crearemos el portfolio de un desarrollador web, con una página de inicio, una página de proyectos y una página de currículum.
+Bienvenid@ a mi portfolio personal, creado con **React** y gestionado con **React Router** para una navegación fluida y dinámica. Es un proyecto pensado para practicar rutas, modularización y estructura profesional en React.
 
-## Pasos previos
-Clona el repositorio y haz un `npm i` para instalar todas las dependencias necesarias. 
-Si no hemos clonado el repositorio debemos crear un proyecto de React con vite. Para ello, ejecutamos el siguiente comando:
+---
+
+## 🧪 Tecnologías utilizadas
+
+- ⚛️ React
+- 🛠️ JavaScript (ES6+)
+- 🌐 HTML5 + 🎨 CSS3
+- 🚀 Node.js
+- ⚡ Vite
+- 🧭 React Router DOM
+- 🗃️ Git y GitHub
+
+---
+
+## 📁 Estructura del proyecto
+
+- `pages/` – Componentes principales como `Home`, `Projects`, `Resume`, y `Contact`
+- `data/` – Contiene los archivos `projects.js` y `resume.js` con la información modularizada.
+- `components/` – Navbar, formulario de contacto (`EmailContact`) y elementos reutilizables.
+- `App.jsx` – Configuración de rutas usando `BrowserRouter`, `Routes` y `Route`.
+
+---
+
+## ✨ Funcionalidades
+
+- Navegación entre páginas sin recargar gracias a **React Router**
+- Listado dinámico de proyectos con sus enlaces a sitios web y código fuente
+- Página de currículum con formación académica y experiencia laboral
+- Formulario de contacto estilizado y funcional con `useState`
+- Uso seguro de enlaces externos con `target="_blank"` y `rel="noopener noreferrer"`
+
+---
+
+## ⚙️ Instalación
 
 ```bash
-npm create vite .
-```
+git clone https://github.com/verokina89/react-routes.git
+cd react-routes
+npm install
+npm run dev
 
-## Instalación
+---
 
-Si el proyecto no tuviera react-router, ejecuta el siguiente comando para instalarlo:
+---
 
-```bash
-npm install react-router-dom
-```
+## 📚 Recursos y aprendizaje
 
-1. **Configuración de Rutas:**
+-Tutorial Oficial de React Router.
+-Documentación Vite.
+-Guía de buenas prácticas con enlaces externos.
 
-Primero, definimos las rutas de nuestro proyecto en el archivo `routes`. Usando `react-router-dom`, definimos las diferentes rutas que usaremos en el proyecto y cuál componente será renderizado en cada una.
+---
 
-  - La ruta `/` renderizará el componente `Home`. Este componente mostrará la página de inicio del portfolio. En esta página, se mostrará una breve descripción del desarrollador.
+### 📫 How to reach me:
+ <img src="https://github.com/Verokina89/verokina89/blob/main/4D0CB1BF-9907-4E22-BE17-CC267F9A16C4_1_105_c.jpeg" width="60%" />
+ 
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/verokina_89/)
+  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Verónica_Pérez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/veronicaiperezs)
 
-  - La ruta `/projects` renderizará el componente `Projects`. Este componente mostrará la página de proyectos del portfolio. En esta página, se mostrarán los proyectos en los que ha trabajado el desarrollador.
-
-  - La ruta `/resume` renderizará el componente `Resume`. Este componente mostrará la página de currículum del portfolio. En esta página, se mostrará la experiencia laboral y educativa del desarrollador.
-
-2. **Navegación entre páginas:**
-
-- Incorporamos una navegación básica en la aplicación utilizando el componente `Link` de `react-router-dom`. Con `Link`, podemos crear enlaces a diferentes páginas de nuestra aplicación. 
-
-3. **Páginas de contenido:**
-
-Creamos los componentes `Home`, `Projects`, `Resume` y `Contact` dentro de la carpeta `pages` que se renderizarán en las rutas correspondientes. Estos componentes simplemente muestran un mensaje de bienvenida, una lista de proyectos y una lista de experiencias laborales y educativas, respectivamente.
-
-- Home: Saludo y barra de navegacion entre las paginas.
-- Projects: información de `project.js` y enlaces a cada projecto (sitio web) con su respectivo codigo.
-- Resume: información de `resume.js` y enlance a repositorio de git segun el lenguaje.
-
-Para poder editar más fácilmente el contenido de las páginas, creamos dos archivos en la carpeta `data` que contienen la información que se mostrará en las páginas de proyectos y currículum. El primer archivo se llamará projects.js y exportará un array con los proyectos, con los siguientes campos ` ( id, name, image, description, url)`. El segundo archivo se llamará resume.js y exportará dos arrays, uno con la experiencia laboral y otro con la educación, con los siguientes campos `studies (id, title, institution, date)` y `experiences (id, title, company, date)`.
-
-Importaremos estos archivos en los componentes `Projects` y `Resume` para mostrar la información en las páginas. Usando `map`, recorremos los arrays y mostramos la información de cada proyecto, experiencia laboral y educación.
-
-## Referencias
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [Tutorial React Router](https://reactrouter.com/en/6.22.1/start/tutorial)
-=======
->>>>>>> 13f89bb (resolviendo err con la terminal referente a git pull origin main --rebase    after git push origin main)
-- [Tutorial React Router](https://reactrouter.com/en/6.22.1/start/tutorial)
-
-
-
-## Resumen 📌 
-
-🔹 Busca en el index.html el elemento con id="root".
-🔹 Crea la raíz con createRoot() para optimizar el rendimiento.
-🔹 Renderiza el componente <App /> dentro de <React.StrictMode> para ayudar a detectar errores.
-🔹 Carga los estilos desde index.css para mejorar la apariencia de la aplicación.
-
-📌 Tu tarea como estudiante JR
-✅ Abre el index.html y encuentra el div con id="root". 📂
-✅ Elimina <React.StrictMode> y prueba si hay cambios visibles. 👀
-✅ Investiga sobre createRoot() en React 18 para entender sus ventajas. 🔍
-
-📌 Link (React Router) vs href (HTML)
-
-Propiedad	<Link> (React Router)	href en <a> (HTML)
-Uso	Para navegación dentro de aplicaciones SPA (Single Page Applications).	Para enlazar a otras páginas o recursos.
-Recarga la página?	❌ No recarga la página (usa JavaScript para cambiar la URL).	✅ Sí recarga la página al hacer clic.
-Optimización	Más rápido, usa React Router para cambiar de vista sin recargar.	Menos eficiente en SPAs porque vuelve a cargar toda la página.
-Cómo funciona?	Cambia la URL sin recargar gracias al Router.	Hace una petición HTTP al servidor y recarga todo el contenido.
-Dónde se usa?	Dentro de aplicaciones React con React Router.	En cualquier sitio web HTML o dentro de React sin Router.
-📌 Ejemplos en código
-
-1️⃣ Usando Link en React Router (No recarga la página)
-import { Link } from "react-router-dom";
-
-function Navbar() {
-  return (
-    <nav>
-      <Link to="/home">Inicio</Link>
-      <Link to="/about">Sobre Nosotros</Link>
-    </nav>
-  );
-}
-✅ Ventajas:
-
-No recarga la página.
-Es ideal para aplicaciones SPA.
-Mejora el rendimiento al cambiar de rutas.
-2️⃣ Usando href en <a> (Recarga la página)
-function Navbar() {
-  return (
-    <nav>
-      <a href="/home">Inicio</a>
-      <a href="/about">Sobre Nosotros</a>
-    </nav>
-  );
-}
-⚠️ Desventajas en React:
-
-Recarga la página al hacer clic.
-Si es una SPA, se pierde el estado global de la aplicación.
-📌 ¿Cuándo usar cada uno?
-
-✅ Usa <Link> cuando trabajas con React Router en una SPA.
-✅ Usa <a href=""> cuando necesitas enlaces a sitios externos o descargas.
-
-📌 Tarea para ti (como estudiante JR)
-🔹 Crea una navbar con Link y href y prueba la diferencia. 🧐
-🔹 Intenta navegar con Link y observa que no hay recarga. 🔄
-🔹 Abre la consola del navegador (F12 > Network) y observa cómo funcionan. 📊
-
-## Explicación algunas propiedades, atributos en el enlace a los proyectos; en Projects.jsx:
-
-<a href={project.url} target="_blank" rel="noopener noreferrer">
-  Ver imagen del Proyecto
-</a>
-target="_blank" → Abre el enlace en una nueva pestaña/ventana.
-rel="noopener noreferrer":
-noopener → Evita que la nueva pestaña tenga acceso a window.opener, lo que previene ataques de seguridad.
-noreferrer → Evita que el sitio destino vea la URL de referencia (el sitio desde donde se hizo clic).
-Con estas propiedades, garantizas que el enlace se abra en una nueva ventana de forma segura y sin exponer la fuente de navegación. 🚀
-
-## Explicacion del componente EmailContact.jsx:  
-
-Se utiliza useState para gestionar los campos del formulario (correo, asunto y mensaje).
-La función handleChange actualiza el estado con los valores ingresados.
-La función handleSubmit previene el comportamiento por defecto (recargar la página) y muestra los datos en la consola. Aquí es donde integrarías el servicio de envío de correos.
-El formulario se estructura con inputs y un textarea, y se envuelve en un contenedor (emailContactContainer).
-
-Estilos en App.css:
-
-.emailContactContainer: Define el aspecto de la tarjeta, con fondo translúcido, padding, bordes redondeados y una sombra suave.
-.emailContactForm: Utiliza flexbox en columna para organizar los campos del formulario con un espacio uniforme (gap).
-Los inputs, textarea y el botón tienen estilos coherentes con los de tus otras tarjetas.
-La media query para pantallas hasta 500px ajusta los tamaños y paddings para dispositivos móviles.
+[![Twitch](https://img.shields.io/badge/Twitch-verokina__89-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/verokina_89)
+  
+[![Discord](https://img.shields.io/badge/Discord-verokina_89-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/verokina_89)
